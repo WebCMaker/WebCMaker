@@ -33,24 +33,7 @@
       <div class="hero-art" role="img" aria-label="Иллюстрация чашки кофе TERRA">
         <div class="art-sun"></div><div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
         <span class="art-note note-one">свежее зерно</span><span class="art-note note-two">медленное утро</span>
-        <svg class="cup-illustration" viewBox="0 0 520 470" aria-hidden="true">
-          <defs>
-            <linearGradient id="cup" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8f2e5"/><stop offset=".48" stop-color="#d9c9aa"/><stop offset="1" stop-color="#b89d76"/></linearGradient>
-            <linearGradient id="coffee" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#68412e"/><stop offset="1" stop-color="#2b1a13"/></linearGradient>
-            <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="17"/></filter>
-          </defs>
-          <ellipse cx="263" cy="386" rx="150" ry="28" fill="#4b3a27" opacity=".18" filter="url(#shadow)"/>
-          <path d="M351 197c71-36 111-1 90 57-15 41-54 60-94 53" fill="none" stroke="#a98c67" stroke-width="21" stroke-linecap="round"/>
-          <path d="M351 197c71-36 111-1 90 57-15 41-54 60-94 53" fill="none" stroke="#ede1cb" stroke-width="10" stroke-linecap="round"/>
-          <path d="M127 170h242l-21 175c-5 42-37 72-79 72h-49c-42 0-74-30-79-72l-14-175z" fill="url(#cup)" stroke="#8e7658" stroke-width="3"/>
-          <ellipse cx="248" cy="174" rx="122" ry="27" fill="#d8c7a8" stroke="#8e7658" stroke-width="3"/>
-          <ellipse cx="248" cy="176" rx="103" ry="18" fill="url(#coffee)"/>
-          <path d="M208 180c12-20 29-17 40-3 10-14 29-15 41-1-14 23-55 31-81 4z" fill="#e5cfaa" opacity=".9"/>
-          <path d="M170 227c13 8 22 10 36 10" fill="none" stroke="#fff8e9" stroke-width="5" stroke-linecap="round" opacity=".65"/>
-          <path d="M181 324c4 25 20 38 45 42" fill="none" stroke="#fff8e9" stroke-width="4" stroke-linecap="round" opacity=".45"/>
-          <path d="M115 386h267" stroke="#6d5940" stroke-width="3" stroke-linecap="round" opacity=".6"/>
-          <path d="M145 393c45 19 149 26 209 0" fill="none" stroke="#8e7658" stroke-width="2" opacity=".35"/>
-        </svg>
+        <img class="cup-illustration" src="terra-cup.svg" alt="" width="520" height="440" fetchpriority="high">
         <span class="art-vertical">GROUND WITH CARE — SERVED WITH TIME</span>
       </div>
     </section>
@@ -67,10 +50,10 @@
       <div class="section-kicker"><span>02</span><i></i><span>ЧТО-ТО ХОРОШЕЕ</span></div>
       <div class="menu-head"><div><h2>Меню с <em>характером.</em></h2><p>Знакомые вкусы и маленькие поводы попробовать новое.</p></div><div class="menu-tabs" role="group" aria-label="Категория меню"><button class="menu-tab active" type="button" data-filter="all" aria-pressed="true">Всё</button><button class="menu-tab" type="button" data-filter="coffee" aria-pressed="false">Кофе</button><button class="menu-tab" type="button" data-filter="bakery" aria-pressed="false">Пекарня</button></div></div>
       <div class="menu-grid">
-        <article class="menu-card menu-card-feature" data-category="coffee"><div class="menu-card-top"><span>01 / КОФЕ</span><span aria-hidden="true">↗</span></div><div class="menu-swatch swatch-espresso"><i></i></div><div class="menu-card-bottom"><h3>Флэт уайт</h3><p>Двойной эспрессо, шёлковое молоко.</p><strong>180 ₴</strong></div></article>
-        <article class="menu-card" data-category="coffee"><div class="menu-card-top"><span>02 / КОФЕ</span><span aria-hidden="true">↗</span></div><div class="menu-swatch swatch-tonic"><i></i></div><div class="menu-card-bottom"><h3>Эспрессо-тоник</h3><p>Яркий кофе, цитрус, холодный тоник.</p><strong>195 ₴</strong></div></article>
-        <article class="menu-card" data-category="bakery"><div class="menu-card-top"><span>03 / ПЕКАРНЯ</span><span aria-hidden="true">↗</span></div><div class="menu-swatch swatch-roll"><i></i></div><div class="menu-card-bottom"><h3>Булочка с корицей</h3><p>Слоёное тесто, корица, ванильная глазурь.</p><strong>145 ₴</strong></div></article>
-        <article class="menu-card" data-category="coffee"><div class="menu-card-top"><span>04 / КОФЕ</span><span aria-hidden="true">↗</span></div><div class="menu-swatch swatch-filter"><i></i></div><div class="menu-card-bottom"><h3>Фильтр дня</h3><p>Чистая чашка. Каждый день — новое зерно.</p><strong>160 ₴</strong></div></article>
+        <article class="menu-card menu-card-feature" data-category="coffee"><div class="menu-card-top"><span>01 / КОФЕ</span><span aria-hidden="true">↗</span></div><div class="menu-swatch swatch-espresso"><img src="menu-flat-white.svg" alt="" width="700" height="460" loading="lazy"></div><div class="menu-card-bottom"><h3>Флэт уайт</h3><p>Двойной эспрессо, шёлковое молоко.</p><strong>180 ₴</strong></div></article>
+        <article class="menu-card" data-category="coffee"><div class="menu-card-top"><span>02 / КОФЕ</span><span aria-hidden="true">↗</span></div><div class="menu-swatch swatch-tonic"><img src="menu-espresso-tonic.svg" alt="" width="700" height="460" loading="lazy"></div><div class="menu-card-bottom"><h3>Эспрессо-тоник</h3><p>Яркий кофе, цитрус, холодный тоник.</p><strong>195 ₴</strong></div></article>
+        <article class="menu-card" data-category="bakery"><div class="menu-card-top"><span>03 / ПЕКАРНЯ</span><span aria-hidden="true">↗</span></div><div class="menu-swatch swatch-roll"><img src="menu-cinnamon-roll.svg" alt="" width="700" height="460" loading="lazy"></div><div class="menu-card-bottom"><h3>Булочка с корицей</h3><p>Слоёное тесто, корица, ванильная глазурь.</p><strong>145 ₴</strong></div></article>
+        <article class="menu-card" data-category="coffee"><div class="menu-card-top"><span>04 / КОФЕ</span><span aria-hidden="true">↗</span></div><div class="menu-swatch swatch-filter"><img src="menu-filter-coffee.svg" alt="" width="700" height="460" loading="lazy"></div><div class="menu-card-bottom"><h3>Фильтр дня</h3><p>Чистая чашка. Каждый день — новое зерно.</p><strong>160 ₴</strong></div></article>
       </div>
       <p class="menu-footnote">Меню и цены — часть концепта сайта.</p>
     </section>
