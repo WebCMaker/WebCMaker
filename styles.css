@@ -465,7 +465,9 @@ body { background: var(--paper); color: var(--ink); }
 .check-list li span, .timing-row strong { color: var(--lime); }
 .timing-row { border-color: var(--line); }
 .timing-row > span { color: var(--ink-soft); }
-.boundary-accent { background: #eff6ff; }
+.boundary-accent { background: #fff; color: var(--ink); }
+.boundary-accent .eyebrow { color: #526174; }
+.boundary-accent p { color: var(--ink-soft); }
 .portfolio-note-icon { border-radius: 16px; background: #dbeafe; color: #1d4ed8; }
 .form-field > span { color: var(--ink); }
 .form-field input, .form-field textarea, .form-field select { border-color: #d1d5db; border-radius: 14px; background: #fff; color: var(--ink); }
