@@ -23,4 +23,36 @@ body { min-width: 0; overflow-x: clip; }
   .ring-two { width: min(330px, 108vw); height: min(330px, 108vw); }
   .menu-swatch { min-height: 112px; }
 }
+/* TERRA: a quieter, more rounded visual system. */
+body { min-width: 0; overflow-x: clip; }
+.site-header { border-radius: 0; }
+.hero { min-width: 0; }
+.hero-art { width: 100%; min-width: 0; border-radius: 26px; background: #ead8c5; box-shadow: 0 18px 42px rgba(82, 58, 39, .08); }
+.hero-art::before { inset: 14px; border-radius: 18px; border-color: rgba(82, 58, 39, .16); }
+.art-sun { top: 50%; left: 50%; width: min(68%, 280px); height: auto; aspect-ratio: 1; background: #d6aa88; opacity: .7; }
+.art-ring, .art-note, .art-vertical { display: none; }
+.cup-illustration { display: block; width: min(100%, 480px); height: auto; margin: 0 auto; filter: none; }
+.menu-card { overflow: hidden; border: 1px solid #d8cbbb; border-radius: 17px; background: #f7f2e8; }
+.menu-card:hover { border-color: #a87959; }
+.menu-swatch { overflow: hidden; min-height: 0; aspect-ratio: 1.55; border-radius: 12px; background: #e7d9c5; }
+.swatch-tonic { background: #e0e4d7; }
+.swatch-roll { background: #ebd8c4; }
+.swatch-filter { background: #dce0d5; }
+.menu-swatch img { display: block; width: 100%; height: 100%; padding: 10px; object-fit: contain; }
+.menu-tab { border-radius: 999px; }
+.menu-tab.active { border-radius: 999px; }
+.menu-tabs { border-radius: 999px; }
+.menu-section { background: #eee7d9; }
+.manifesto { margin-inline: clamp(12px, 3vw, 42px); border-radius: 30px; }
+.visit-map { border-radius: 22px; }
+.button { border-radius: 999px; }
+.site-footer { border-radius: 24px 24px 0 0; }
+@media (max-width: 680px) {
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .hero-art { min-height: 320px; }
+  .cup-illustration { width: min(96%, 410px); }
+  .menu-swatch { min-height: 0; aspect-ratio: 1.2; }
+  .menu-swatch img { padding: 5px; }
+  .manifesto { margin-inline: 10px; border-radius: 24px; }
+}
 

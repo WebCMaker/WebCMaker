@@ -1,33 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440" fill="none">
   <defs>
-    <linearGradient id="ceramic" x1="145" y1="184" x2="386" y2="366" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFF9EC"/><stop offset=".48" stop-color="#E6D9C2"/><stop offset="1" stop-color="#BBA785"/>
-    </linearGradient>
-    <linearGradient id="handle" x1="384" y1="202" x2="470" y2="282" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F6EFDF"/><stop offset="1" stop-color="#BDAA8A"/>
-    </linearGradient>
-    <linearGradient id="coffee" x1="260" y1="183" x2="260" y2="216" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#865638"/><stop offset="1" stop-color="#291911"/>
-    </linearGradient>
-    <linearGradient id="saucer" x1="124" y1="345" x2="393" y2="397" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F6EFDF"/><stop offset=".5" stop-color="#D4C2A4"/><stop offset="1" stop-color="#AA9573"/>
-    </linearGradient>
-    <filter id="soft-shadow" x="38" y="35" width="444" height="390" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feGaussianBlur stdDeviation="13"/>
-    </filter>
+    <linearGradient id="ceramic" x1="148" y1="176" x2="372" y2="370" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF9EF"/><stop offset="1" stop-color="#CFB99A"/></linearGradient>
+    <linearGradient id="espresso" x1="260" y1="178" x2="260" y2="211" gradientUnits="userSpaceOnUse"><stop stop-color="#936344"/><stop offset="1" stop-color="#493021"/></linearGradient>
   </defs>
-  <ellipse cx="260" cy="384" rx="167" ry="20" fill="#4B3928" opacity=".2" filter="url(#soft-shadow)"/>
-  <path d="M378 207c77-33 106-8 91 39-13 40-44 57-91 48" stroke="#9D8766" stroke-width="27" stroke-linecap="round"/>
-  <path d="M378 207c77-33 106-8 91 39-13 40-44 57-91 48" stroke="url(#handle)" stroke-width="15" stroke-linecap="round"/>
-  <path d="M119 358c43-20 238-21 281 0 2 1 2 4 0 5-43 30-238 31-281 0-2-1-2-4 0-5Z" fill="url(#saucer)" stroke="#9D8766" stroke-width="2"/>
-  <ellipse cx="260" cy="355" rx="104" ry="14" fill="#E8DDC8" stroke="#B5A181" stroke-width="2"/>
-  <path d="M132 177h256l-22 169c-5 38-32 62-70 62h-72c-38 0-65-24-70-62l-22-169Z" fill="url(#ceramic)" stroke="#9D8766" stroke-width="2.5"/>
-  <path d="M153 212c5 48 13 93 21 123 5 20 18 34 37 40" stroke="#FFFCF5" stroke-width="5" stroke-linecap="round" opacity=".68"/>
-  <path d="M171 333c8 17 18 25 33 29" stroke="#FFFDF7" stroke-width="3" stroke-linecap="round" opacity=".58"/>
-  <ellipse cx="260" cy="179" rx="128" ry="30" fill="#D5C3A2" stroke="#9D8766" stroke-width="2.5"/>
-  <ellipse cx="260" cy="180" rx="108" ry="21" fill="url(#coffee)"/>
-  <path d="M229 183c8-14 21-15 31-4 10-11 25-10 33 4-8 17-23 25-34 25-12 0-26-8-30-25Z" fill="#F3E2C4"/>
-  <path d="M260 181c-3 7-9 12-17 16m18-16c5 7 12 11 20 14" stroke="#C9A77A" stroke-width="2" stroke-linecap="round"/>
-  <path d="M178 119c-10-13-9-25 3-36m70 35c-10-13-9-25 3-36m67 37c-10-13-9-25 3-36" stroke="#FFF9EC" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+  <ellipse cx="260" cy="379" rx="154" ry="18" fill="#70563C" opacity=".12"/>
+  <path d="M374 207c68-21 91 5 80 39-9 29-37 42-80 34" stroke="#AA8C69" stroke-width="24" stroke-linecap="round"/>
+  <path d="M374 207c68-21 91 5 80 39-9 29-37 42-80 34" stroke="#F4EADA" stroke-width="14" stroke-linecap="round"/>
+  <path d="M124 358c39-23 233-23 272 0-39 30-233 30-272 0Z" fill="#E7D9C1"/>
+  <ellipse cx="260" cy="353" rx="103" ry="13" fill="#F9F4EA" stroke="#AD9272" stroke-width="2"/>
+  <path d="M140 176h240l-19 161c-4 34-29 54-63 54h-76c-34 0-59-20-63-54l-19-161Z" fill="url(#ceramic)" stroke="#A48765" stroke-width="2.5"/>
+  <path d="M160 214c6 43 12 79 19 103 5 16 15 27 29 33" stroke="#FFFDF8" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+  <ellipse cx="260" cy="178" rx="120" ry="27" fill="#D8C4A3" stroke="#A48765" stroke-width="2.5"/>
+  <ellipse cx="260" cy="179" rx="101" ry="18" fill="url(#espresso)"/>
+  <path d="M235 181c7-10 17-10 25-2 8-8 18-8 25 2-5 12-15 18-25 18s-20-6-25-18Z" fill="#F3E2C5"/>
+  <path d="M260 180c-3 6-8 10-14 13m15-13c4 5 8 9 14 11" stroke="#C4A276" stroke-width="2" stroke-linecap="round"/>
+  <path d="M217 120c-8-10-7-18 2-27m76 27c-8-10-7-18 2-27" stroke="#A98663" stroke-width="3" stroke-linecap="round" opacity=".6"/>
 </svg>
 
