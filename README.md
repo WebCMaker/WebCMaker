@@ -1,16 +1,25 @@
-## Hi there 👋
+# Привет, я WebCMaker
+## Frontend / Fullstack Web Developer
 
-<!--
-**WebCMaker/WebCMaker** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Я занимаюсь веб-разработкой, создаю современные, адаптивные и быстродействующие сайты и веб-приложения. Специализируюсь на разработке удобных интерфейсов и оптимизации кода.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Технологический стек и инструменты
+
+* Frontend: HTML5, CSS3, SASS, JavaScript (ES6+), TypeScript, React.js / Next.js
+* Backend: Node.js, Express, PHP / WordPress
+* Базы данных: MongoDB, PostgreSQL, MySQL
+* Инструменты и деплой: Git, GitHub, Vite, Docker, Vercel, Netlify
+---
+
+### Статистика GitHub
+
+[![GitHub Top Langs](https://vercel.app{WebCMaker}&layout=compact&theme=dark)](https://github.com)
+
+---
+
+### Контакты для связи
+
+* Email: [WebCMaker@example.com](mailto:webcmaker@example.com)
+* Портфолио: [ссылка на сайт](https://ваш-сайт.com)
