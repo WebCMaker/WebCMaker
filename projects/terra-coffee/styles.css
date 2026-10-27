@@ -71,3 +71,25 @@ body { min-width: 0; overflow-x: clip; }
   .menu-swatch img { padding: 0; }
   .photo-credits { font-size: 8px; }
 }
+
+/* Illustrated neighborhood map for the TERRA concept */
+.visit-map { height: min(500px, 36vw); min-height: 440px; isolation: isolate; background: #d9d2c1; }
+.neighborhood-map { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+.map-park { fill: #c0c4a8; stroke: #aeb393; stroke-width: 2; }
+.park-path { fill: none; stroke: #e3dfc9; stroke-width: 3; stroke-linecap: round; opacity: .8; }
+.map-blocks { fill: #e4ddcd; stroke: #c7bfaf; stroke-width: 1.5; stroke-linejoin: round; }
+.map-buildings { fill: #cfc7b6; opacity: .8; }
+.street-edge { fill: none; stroke: #c6bdad; stroke-width: 38; stroke-linecap: round; stroke-linejoin: round; }
+.street-main { fill: none; stroke: #f2eadb; stroke-width: 27; stroke-linecap: round; stroke-linejoin: round; }
+.street-edge.street-secondary { stroke-width: 22; }
+.street-secondary { fill: none; stroke: #eee5d4; stroke-width: 13; stroke-linecap: round; stroke-linejoin: round; }
+.map-trees { fill: #899071; opacity: .82; }
+.map-trees circle { stroke: #a4a786; stroke-width: 3; }
+.marker-halo { fill: #f1e9d8; opacity: .55; }
+.marker-shape { fill: var(--rust); stroke: #f0eadc; stroke-width: 2; }
+.marker-core { fill: #f0eadc; }
+.map-place-label { fill: #62685a; font: 800 9px Arial, sans-serif; letter-spacing: 2px; }
+.map-place-label-small { fill: #777665; font-size: 7px; letter-spacing: 1.6px; }
+@media (max-width: 680px) {
+  .visit-map { height: 300px; min-height: 300px; }
+}
