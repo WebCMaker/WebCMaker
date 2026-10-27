@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 460" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="190 100 320 280" fill="none">
   <defs><radialGradient id="pastry" cx="0" cy="0" r="1" gradientTransform="matrix(125 125 -125 125 302 127)" gradientUnits="userSpaceOnUse"><stop stop-color="#F4D19A"/><stop offset="1" stop-color="#BC7548"/></radialGradient></defs>
   <ellipse cx="350" cy="363" rx="142" ry="17" fill="#70563C" opacity=".12"/>
   <circle cx="350" cy="236" r="124" fill="url(#pastry)" stroke="#A2643F" stroke-width="4"/>

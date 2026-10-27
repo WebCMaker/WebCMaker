@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 460" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="200 55 300 330" fill="none">
   <defs><linearGradient id="glass" x1="278" y1="250" x2="422" y2="373" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF9EF" stop-opacity=".78"/><stop offset="1" stop-color="#CFB99A" stop-opacity=".5"/></linearGradient><linearGradient id="coffee" x1="350" y1="314" x2="350" y2="370" gradientUnits="userSpaceOnUse"><stop stop-color="#8A5A3C"/><stop offset="1" stop-color="#493021"/></linearGradient></defs>
   <ellipse cx="350" cy="380" rx="136" ry="15" fill="#70563C" opacity=".11"/>
   <path d="M270 146h160l-38 102h-84l-38-102Z" fill="#B77B55" stroke="#805739" stroke-width="3"/>
