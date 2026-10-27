@@ -552,3 +552,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .project-art-title { left: 24px; bottom: 60px; margin: 0; font-size: clamp(58px, 15vw, 82px); }
   .project-art-title span { margin-top: 11px; font-size: 8px; }
 }
+
+/* Straighter portfolio CTA and FAQ rows */
+.cta-band { border-radius: 0; }
+.faq-list { border-top: 0; }
+.faq-item { border-radius: 14px; }
