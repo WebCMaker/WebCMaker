@@ -73,7 +73,7 @@ window.WEBIT_COPY = {
         ["Редизайн", "Обновление сайта, когда он устарел визуально, неудобен или больше не отражает бизнес.", ["Разбор текущего сайта", "Новая структура", "Обновлённый дизайн", "Постепенный запуск изменений"]]
       ],
       includedTitle: "Что можно включить в проект",
-      included: ["Проектирование структуры и прототипа", "Дизайн интерфейса в Figma", "Вёрстка на HTML, CSS и JavaScript", "Адаптация под телефон, планшет и компьютер", "Формы обратной связи и базовая аналитика", "Помощь с доменом, хостингом и публикацией", "Техническое сопровождение после запуска по отдельной оценке"],
+      included: ["Дизайн интерфейса в Figma", "Вёрстка на HTML, CSS и JavaScript", "Адаптация под телефон, планшет и компьютер", "Формы обратной связи и базовая аналитика", "Техническое сопровождение после запуска по отдельной оценке"],
       limitsTitle: "Границы специализации",
       limitsText: "Сейчас мы не разрабатываем интернет-магазины, обработку платежей и системы, где ошибка может затронуть чувствительные данные. Так мы берём ответственность за тот объём, который можем качественно довести до запуска.",
       revisionsTitle: "Как устроены правки",
@@ -182,7 +182,7 @@ window.WEBIT_COPY = {
       intro: "We design and build websites for businesses and professionals. Scope and cost are set after we understand your needs.",
       cards: [["Landing page", "One page focused on a specific service, offer or campaign.", ["Structure and wireframe", "Design in Figma", "Responsive front-end", "Forms and basic analytics"]], ["Business website", "A few pages to introduce a company, service or specialist clearly.", ["Page architecture", "Design and development", "Mobile-ready layout", "Domain setup on request"]], ["Redesign", "A website refresh when the current experience feels dated, difficult or disconnected from the business.", ["Review of the current site", "Updated structure", "New visual design", "A gradual release of changes"]]],
       includedTitle: "What can be included",
-      included: ["Website structure and wireframes", "Interface design in Figma", "HTML, CSS and JavaScript development", "Responsive layouts for phone, tablet and desktop", "Contact forms and basic analytics", "Help with domain, hosting and publishing", "Post-launch maintenance, estimated separately"],
+      included: ["Interface design in Figma", "HTML, CSS and JavaScript development", "Responsive layouts for phone, tablet and desktop", "Contact forms and basic analytics", "Post-launch maintenance, estimated separately"],
       limitsTitle: "What we do not take on yet",
       limitsText: "We currently do not build online stores, payment processing or systems where a mistake could expose sensitive data. This lets us take responsibility for work we can deliver well.",
       revisionsTitle: "How revisions work",
@@ -275,7 +275,7 @@ window.WEBIT_COPY = {
       intro: "Проєктуємо й розробляємо сайти для бізнесу та фахівців. Обсяг і вартість визначаємо після знайомства із задачею.",
       cards: [["Лендінг", "Одна сторінка, зосереджена на конкретній послузі, пропозиції чи кампанії.", ["Структура та прототип", "Дизайн у Figma", "Адаптивна верстка", "Форми й базова аналітика"]], ["Сайт-візитка", "Кілька сторінок, щоб зрозуміло представити компанію, послугу чи фахівця.", ["Архітектура сторінок", "Дизайн і розробка", "Адаптація для телефонів", "Підключення домену за запитом"]], ["Редизайн", "Оновлення сайту, коли він застарів, незручний або вже не відображає бізнес.", ["Аналіз поточного сайту", "Нова структура", "Оновлений дизайн", "Поступовий запуск змін"]]],
       includedTitle: "Що можна включити в проєкт",
-      included: ["Проєктування структури та прототипу", "Дизайн інтерфейсу у Figma", "Верстка на HTML, CSS і JavaScript", "Адаптація для телефона, планшета й комп’ютера", "Форми зворотного зв’язку та базова аналітика", "Допомога з доменом, хостингом і публікацією", "Технічна підтримка після запуску за окремою оцінкою"],
+      included: ["Дизайн інтерфейсу у Figma", "Верстка на HTML, CSS і JavaScript", "Адаптація для телефона, планшета й комп’ютера", "Форми зворотного зв’язку та базова аналітика", "Технічна підтримка після запуску за окремою оцінкою"],
       limitsTitle: "Межі спеціалізації",
       limitsText: "Поки що ми не розробляємо інтернет-магазини, обробку платежів і системи, де помилка може зачепити чутливі дані. Так ми беремо відповідальність за роботу, яку можемо якісно довести до запуску.",
       revisionsTitle: "Як працюють правки",
@@ -323,4 +323,3 @@ window.WEBIT_COPY = {
     }
   }
 };
-
