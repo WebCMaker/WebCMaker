@@ -13,12 +13,6 @@
 * Инструменты и деплой: Git, GitHub, Vite, Docker, Vercel, Netlify
 ---
 
-### Статистика GitHub
-
-[![GitHub Top Langs](https://vercel.app{WebCMaker}&layout=compact&theme=dark)](https://github.com)
-
----
-
 ### Контакты для связи
 
 * Email: [WebCMaker@example.com](mailto:webcmaker@example.com)
