@@ -126,13 +126,13 @@ window.WEBIT_COPY = {
       budgetPlaceholder: "Можно оставить поле пустым",
       extra: "Что ещё важно знать?",
       extraPlaceholder: "Любые пожелания или ограничения",
-      submit: "Скопировать бриф",
-      formNote: "Ответы скопируются в буфер обмена. Вы сможете отправить их удобным способом.",
+      submit: "Отправить бриф",
+      formNote: "Откроется черновик письма. Проверьте его и нажмите «Отправить».",
       directTitle: "Расскажите о своей задаче",
       directText: "Заполните бриф — так я сразу пойму, какой сайт вам нужен.",
       required: "Обязательное поле",
       emailSubject: "Новая заявка на сайт — WebCMaker",
-      mailOpened: "Бриф скопирован. Теперь его можно отправить удобным способом.",
+      mailOpened: "Открываю черновик письма с вашим брифом.",
       copyFallback: "Не удалось скопировать бриф. Выделите ответы и скопируйте их вручную."
     }
   },
@@ -222,10 +222,10 @@ window.WEBIT_COPY = {
       timing: "When would you like to launch?", timingPlaceholder: "A date or an approximate timeframe",
       budget: "Do you have a budget range? (optional)", budgetPlaceholder: "You can leave this blank",
       extra: "What else should we know?", extraPlaceholder: "Any preferences or constraints",
-      submit: "Copy the brief", formNote: "Your answers will be copied to the clipboard so you can send them however you prefer.",
+      submit: "Email the brief", formNote: "An email draft will open. Review it and press Send.",
       directTitle: "Tell me about your project", directText: "Fill in the brief to help me understand what kind of website you need.",
       required: "Required", emailSubject: "New website enquiry — WebCMaker",
-      mailOpened: "Brief copied. You can now send it using your preferred method.",
+      mailOpened: "Opening an email draft with your brief.",
       copyFallback: "Could not copy the brief. Please select and copy your answers manually."
     }
   },
@@ -315,11 +315,12 @@ window.WEBIT_COPY = {
       timing: "Коли хотіли б запустити сайт?", timingPlaceholder: "Дата або приблизний строк",
       budget: "Є орієнтир щодо бюджету? (необов’язково)", budgetPlaceholder: "Поле можна залишити порожнім",
       extra: "Що ще важливо знати?", extraPlaceholder: "Будь-які побажання чи обмеження",
-      submit: "Скопіювати бриф", formNote: "Відповіді скопіюються в буфер обміну. Ви зможете надіслати їх зручним способом.",
+      submit: "Надіслати бриф", formNote: "Відкриється чернетка листа. Перевірте її та натисніть «Надіслати».",
       directTitle: "Розкажіть про свою задачу", directText: "Заповніть бриф — так я відразу зрозумію, який сайт вам потрібен.",
       required: "Обов’язкове поле", emailSubject: "Нова заявка на сайт — WebCMaker",
-      mailOpened: "Бриф скопійовано. Тепер його можна надіслати зручним способом.",
+      mailOpened: "Відкриваю чернетку листа з вашим брифом.",
       copyFallback: "Не вдалося скопіювати бриф. Виділіть відповіді та скопіюйте їх вручну."
     }
   }
 };
+
