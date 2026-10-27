@@ -493,6 +493,24 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .project-art-title span { display: block; margin-top: 17px; font: 700 10px 'DM Sans', sans-serif; letter-spacing: .22em; text-align: right; text-transform: uppercase; }
 .project-art-cup { position: absolute; z-index: 3; right: 10%; bottom: 10%; width: clamp(150px, 24vw, 205px); height: auto; transform: none; border: 0; border-radius: 0; background: transparent; box-shadow: none; filter: drop-shadow(0 14px 12px rgba(47, 34, 21, .2)); object-fit: contain; }
 .project-art-bean { display: none; }
+
+/* TERRA cover photography */
+.project-art { color: #fff; background: #46362d; }
+.project-art::before { z-index: 1; inset: 0; border: 0; border-radius: 0; background: linear-gradient(90deg, rgba(25, 20, 16, .55), rgba(25, 20, 16, .08) 75%); }
+.project-art-photo { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 0; object-fit: cover; object-position: center 58%; }
+.project-art-index, .project-art-bottom { z-index: 2; left: clamp(24px, 6vw, 70px); color: rgba(255, 255, 255, .86); text-shadow: 0 1px 8px rgba(0, 0, 0, .24); }
+.project-art-index { top: 37px; }
+.project-art-bottom { bottom: 30px; }
+.project-art-mark { z-index: 2; color: #fff; border-color: rgba(255, 255, 255, .65); }
+.project-art-title { position: absolute; z-index: 2; left: clamp(24px, 6vw, 70px); bottom: 72px; margin: 0; color: #fff; font-size: clamp(64px, 10vw, 122px); text-shadow: 0 2px 16px rgba(0, 0, 0, .18); }
+.project-art-title span { margin-top: 14px; color: rgba(255, 255, 255, .9); font-size: 9px; text-align: left; }
+.project-art-sun, .project-art-cup, .project-art-bean { display: none; }
+@media (max-width: 680px) {
+  .project-art-index { top: 22px; }
+  .project-art-bottom { bottom: 23px; }
+  .project-art-title { left: 24px; bottom: 60px; font-size: clamp(58px, 15vw, 82px); }
+  .project-art-title span { margin-top: 11px; font-size: 8px; }
+}
 .project-caption { padding: 22px 26px; }
 .project-caption > div { max-width: 660px; }
 .project-caption h3 { color: var(--ink); font: 500 clamp(24px, 4vw, 34px)/1.15 'Manrope', sans-serif; }
@@ -529,4 +547,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 }@media (max-width: 760px) {
   .reveal, .reveal.visible { opacity: 1; transform: none; }
 }
-
+@media (max-width: 760px) {
+  .project-art::before { inset: 0; border: 0; border-radius: 0; }
+  .project-art-title { left: 24px; bottom: 60px; margin: 0; font-size: clamp(58px, 15vw, 82px); }
+  .project-art-title span { margin-top: 11px; font-size: 8px; }
+}
