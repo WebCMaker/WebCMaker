@@ -58,7 +58,7 @@
 
   function featuredProjectCard(project) {
     return `<div class="project-grid project-feature-grid"><a class="project-card project-feature-card reveal" href="projects/terra-coffee/" target="_blank" rel="noopener noreferrer" aria-label="${esc(project.linkLabel)}: ${esc(project.title)}">
-      <div class="project-visual project-art" aria-hidden="true"><span class="project-art-index">CONCEPT / 01</span><span class="project-art-mark">T</span><div class="project-art-sun"></div><div class="project-art-title">TERRA<span>coffee & bakery</span></div><div class="project-art-bean bean-one"></div><div class="project-art-bean bean-two"></div><div class="project-art-cup"><i></i></div><span class="project-art-bottom">A SMALL RITUAL, DONE WELL</span></div>
+      <div class="project-visual project-art" aria-hidden="true"><span class="project-art-index">CONCEPT / 01</span><span class="project-art-mark">T</span><div class="project-art-sun"></div><div class="project-art-title">TERRA<span>coffee & bakery</span></div><div class="project-art-bean bean-one"></div><div class="project-art-bean bean-two"></div><img class="project-art-cup" src="projects/terra-coffee/terra-cup.svg" alt="" width="520" height="440" loading="lazy"><span class="project-art-bottom">A SMALL RITUAL, DONE WELL</span></div>
       <div class="project-caption"><div><span class="eyebrow tiny">${esc(project.category)}</span><h3>${esc(project.title)}</h3><p>${esc(project.description)}</p><span class="project-feature-link">${esc(project.linkLabel)} ${arrow}</span></div><span class="project-plus" aria-hidden="true">↗</span></div>
     </a></div>`;
   }
