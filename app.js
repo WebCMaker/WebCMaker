@@ -2,6 +2,7 @@
   const copy = window.WEBIT_COPY;
   const supported = ["ru", "en", "uk"];
   const page = document.body.dataset.page || "home";
+  const contactEmail = "webcmaker@gmail.com";
   const storageKey = "webcmaker-language";
   let saved = "";
   try {
@@ -42,7 +43,7 @@
   function footer(t) {
     return `<footer class="site-footer"><div class="container footer-top">
         <div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true"><span>W</span></span><span class="brand-name">Web<span>CMaker</span></span></a><p>${esc(t.footerLine)}</p></div>
-        <div class="footer-column"><span class="footer-heading">${esc(t.contact)}</span>${link("brief.html", `${esc(t.nav.brief)} ${arrow}`)}</div>
+        <div class="footer-column"><span class="footer-heading">${esc(t.contact)}</span><a href="mailto:${contactEmail}">${contactEmail} ${arrow}</a>${link("brief.html", esc(t.nav.brief))}</div>
         <div class="footer-column"><span class="footer-heading">WebCMaker</span>${link("services.html", esc(t.nav.services))}${link("projects.html", esc(t.nav.projects))}${link("brief.html", esc(t.nav.brief))}</div>
       </div><div class="container footer-bottom"><span>© <span class="current-year"></span> WebCMaker</span><span>${esc(t.footerLabel)} · ${esc(t.langName)}</span></div></footer>`;
   }
@@ -90,7 +91,7 @@
     const field = (name, label, placeholder, type = "text", required = false) => `<label class="form-field"><span>${esc(label)}${required ? ` <b aria-hidden="true">*</b>` : ""}</span><input type="${type}" name="${name}" placeholder="${esc(placeholder)}" ${required ? "required" : ""} ${type === "email" ? 'autocomplete="email"' : ""}></label>`;
     const textarea = (name, label, placeholder, required = false) => `<label class="form-field"><span>${esc(label)}${required ? ` <b aria-hidden="true">*</b>` : ""}</span><textarea name="${name}" placeholder="${esc(placeholder)}" rows="3" ${required ? "required" : ""}></textarea></label>`;
     return `<main id="main"><section class="page-hero section-pad"><div class="container page-hero-inner reveal"><span class="eyebrow"><i class="eyebrow-dot"></i>${esc(t.eyebrow)}</span><h1>${esc(t.title)}</h1><p>${esc(t.intro)}</p></div></section>
-      <section class="section-pad section-muted"><div class="container brief-layout"><div class="brief-aside reveal"><span class="eyebrow">${lang === "ru" ? "Никакого давления" : lang === "uk" ? "Жодного тиску" : "No pressure"}</span><h2>${esc(t.directTitle)}</h2><p>${esc(t.directText)}</p><div class="aside-note"><span>↗</span><p>${lang === "ru" ? "Объём, сроки, стоимость и порядок оплаты согласуем до начала работы." : lang === "uk" ? "Обсяг, строки, вартість і порядок оплати погодимо до початку роботи." : "We agree on scope, timeline, cost and payment terms before starting."}</p></div></div>
+      <section class="section-pad section-muted"><div class="container brief-layout"><div class="brief-aside reveal"><span class="eyebrow">${lang === "ru" ? "Никакого давления" : lang === "uk" ? "Жодного тиску" : "No pressure"}</span><h2>${esc(t.directTitle)}</h2><p>${esc(t.directText)}</p><a class="button button-dark full-button" href="mailto:${contactEmail}">${esc(t.email)} ${arrow}</a><a class="brief-email" href="mailto:${contactEmail}">${contactEmail}</a><div class="aside-note"><span>↗</span><p>${lang === "ru" ? "Объём, сроки, стоимость и порядок оплаты согласуем до начала работы." : lang === "uk" ? "Обсяг, строки, вартість і порядок оплати погодимо до початку роботи." : "We agree on scope, timeline, cost and payment terms before starting."}</p></div></div>
       <div class="form-card reveal"><h2>${esc(t.formTitle)}</h2><p class="form-required"><b>*</b> ${esc(t.required)}</p><form id="brief-form">
         <div class="form-row">${field("name", t.name, t.namePlaceholder, "text", true)}${field("reply", t.contact, t.contactPlaceholder, "text", true)}</div>
         <label class="form-field"><span>${esc(t.type)}</span><select name="type">${t.typeOptions.map((option, index) => `<option value="${index ? esc(option) : ""}" ${index === 0 ? "selected disabled" : ""}>${esc(option)}</option>`).join("")}</select></label>
@@ -170,27 +171,12 @@
       const entries = [...new FormData(form).entries()].filter(([, value]) => String(value).trim());
       const body = entries.map(([key, value]) => `${form.querySelector(`[name="${key}"]`).closest("label").querySelector("span").textContent.replace("*", "").trim()}\n${value}`).join("\n\n");
       const status = document.getElementById("form-status");
-      const fallbackCopy = () => {
-        const draft = document.createElement("textarea");
-        draft.value = body;
-        draft.setAttribute("readonly", "");
-        draft.style.position = "fixed";
-        draft.style.opacity = "0";
-        document.body.append(draft);
-        draft.select();
-        const copied = document.execCommand("copy");
-        draft.remove();
-        status.textContent = copied ? t.mailOpened : t.copyFallback;
-      };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(body).then(() => {
-          status.textContent = t.mailOpened;
-        }).catch(fallbackCopy);
-      } else {
-        fallbackCopy();
-      }
+      const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(t.emailSubject)}&body=${encodeURIComponent(body)}`;
+      status.textContent = t.mailOpened;
+      window.location.href = mailto;
     });
   }
 
   render();
 })();
+
