@@ -526,4 +526,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 @media (max-width: 420px) {
   .container { width: calc(100% - 32px); }
   .hero h1 { font-size: clamp(40px, 12vw, 48px); }
+}@media (max-width: 760px) {
+  .reveal, .reveal.visible { opacity: 1; transform: none; }
 }
+

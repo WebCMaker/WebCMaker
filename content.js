@@ -88,7 +88,7 @@ window.WEBIT_COPY = {
     projects: {
       eyebrow: "Концепт-кейс · WebCMaker",
       title: "TERRA — кофейня и пекарня",
-      intro: "Концептуальный сайт для вымышленной городской кофейни. Название, меню и место действия созданы для демонстрации дизайна и разработки.",
+      intro: "Концепт сайта для кофейни TERRA.",
       featured: { category: "Концепт · Кофейня", title: "TERRA — кофе без спешки", description: "Лендинг кофейни с меню и информацией о локации.", linkLabel: "Открыть концепт" },
       noteTitle: "Нужен сайт в похожем качестве?",
       noteText: "Расскажите о своей задаче — обсудим структуру, сроки и подходящий формат сайта.",
@@ -197,7 +197,7 @@ window.WEBIT_COPY = {
     projects: {
       eyebrow: "Concept case study · WebCMaker",
       title: "TERRA — coffee shop & bakery",
-      intro: "A concept website for a fictional neighborhood coffee shop. The brand, menu and location are invented for this design and development project.",
+      intro: "Website concept for coffee shop TERRA.",
       featured: { category: "Concept · Coffee shop", title: "TERRA — coffee, without the rush", description: "A coffee shop landing page with a menu and visit details.", linkLabel: "Open concept" },
       noteTitle: "Looking for a website with the same care?",
       noteText: "Tell me about your project and we can discuss its structure, timeline and the right format.",
@@ -290,7 +290,7 @@ window.WEBIT_COPY = {
     projects: {
       eyebrow: "Концепт-кейс · WebCMaker",
       title: "TERRA — кав’ярня та пекарня",
-      intro: "Концептуальний сайт для вигаданої міської кав’ярні. Назву, меню та локацію створено для демонстрації дизайну й розробки.",
+      intro: "Концепт сайту кав’ярні TERRA.",
       featured: { category: "Концепт · Кав’ярня", title: "TERRA — кава без поспіху", description: "Лендінг кав’ярні з меню та інформацією про локацію.", linkLabel: "Відкрити концепт" },
       noteTitle: "Потрібен сайт такої ж якості?",
       noteText: "Розкажіть про свою задачу — обговоримо структуру, строки та формат сайту.",
