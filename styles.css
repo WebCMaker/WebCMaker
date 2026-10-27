@@ -547,3 +547,23 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .bean-two { right: 18%; bottom: 28%; }
 }
 
+/* Refined TERRA concept artwork */
+.project-art-cup {
+  right: 10%;
+  bottom: 11%;
+  width: clamp(132px, 23vw, 205px);
+  height: auto;
+  transform: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  filter: drop-shadow(0 16px 14px rgba(47, 34, 21, .22));
+  object-fit: contain;
+}
+.project-feature-card .project-art-cup { transition: transform .35s ease; }
+.project-feature-card:hover .project-art-cup { transform: translateY(-4px); }
+@media (max-width: 700px) {
+  .project-art-cup { right: 6%; bottom: 12%; width: clamp(118px, 34vw, 170px); }
+}
+
