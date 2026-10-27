@@ -555,5 +555,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* Straighter portfolio note and FAQ rows */
 .portfolio-note { border-radius: 0; }
+.cta-band { border-radius: 0; }
 .faq-list { border-top: 0; }
 .faq-item { border-radius: 14px; }
