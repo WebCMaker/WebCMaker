@@ -494,6 +494,16 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .main-nav { border-color: #2b2f32; background: #101214; }
   .nav-link { border-bottom-color: #25292b; }
   .hero h1 { font-size: clamp(48px, 12vw, 68px); }
+  .faq-layout { grid-template-columns: minmax(0, 1fr); gap: 25px; }
+  .faq-layout .section-heading { max-width: none; margin-bottom: 0; }
+  .faq-layout .section-heading h2 { max-width: 12ch; }
+  .faq-layout .section-heading > p { max-width: 34ch; margin-top: 12px; }
+  .faq-list { display: grid; gap: 10px; border-top: 0; }
+  .faq-item { border: 1px solid #2b2f32; padding: 0 15px; }
+  .faq-item summary { display: grid; grid-template-columns: minmax(0, 1fr) 28px; align-items: center; gap: 12px; min-height: 64px; padding: 14px 0; font-size: 14px; line-height: 1.4; }
+  .faq-item summary span { width: 28px; height: 28px; border-radius: 2px; background: #25201e; color: var(--lime); }
+  .faq-item p { max-width: none; margin: 0; padding: 0 38px 17px 0; font-size: 13px; line-height: 1.65; }
+  .reveal, .reveal.visible { opacity: 1; transform: none; }
 }
 @media (max-width: 420px) {
   .container { width: calc(100% - 32px); }

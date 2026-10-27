@@ -3,7 +3,12 @@
   const supported = ["ru", "en", "uk"];
   const page = document.body.dataset.page || "home";
   const storageKey = "webcmaker-language";
-  const saved = localStorage.getItem(storageKey);
+  let saved = "";
+  try {
+    saved = localStorage.getItem(storageKey) || "";
+  } catch (error) {
+    // Continue with the default language when browser storage is unavailable.
+  }
   let lang = supported.includes(saved) ? saved : "ru";
 
   const esc = (value) => String(value).replace(/[&<>"']/g, (char) => ({
@@ -111,7 +116,11 @@
     document.getElementById("app").innerHTML = header(t) + content + footer(t);
     document.querySelectorAll("[data-language]").forEach((button) => button.addEventListener("click", () => {
       lang = button.dataset.language;
-      localStorage.setItem(storageKey, lang);
+      try {
+        localStorage.setItem(storageKey, lang);
+      } catch (error) {
+        // Language switching still works for the current page.
+      }
       render();
     }));
     document.querySelector(".current-year").textContent = new Date().getFullYear();
