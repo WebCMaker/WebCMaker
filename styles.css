@@ -560,3 +560,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .cta-band { border-radius: 0; }
 .faq-list { border-top: 0; }
 .faq-item { border-radius: 14px; }
+
+/* FAQ controls: white plus badges and a little more inner spacing */
+.faq-item summary { padding-inline: 6px; }
+.faq-item summary span { background: #fff; }
