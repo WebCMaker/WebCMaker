@@ -566,10 +566,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .faq-item summary span { background: #fff; }
 
 /* TERRA and FORMA concept cards */
-.project-showcase-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 18px; }
-.project-showcase-grid .project-feature-grid { max-width: none; }
-.project-showcase-grid .project-feature-card .project-visual { min-height: 330px; }
-.project-showcase-grid .project-caption { padding: 18px 20px; }
+.project-showcase-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 18px; }
+.project-showcase-grid .project-feature-grid { max-width: none; height: 100%; }
+.project-showcase-grid .project-feature-card { display: flex; height: 100%; flex-direction: column; }
+.project-showcase-grid .project-feature-card .project-visual { min-height: 330px; flex: 0 0 330px; }
+.project-showcase-grid .project-caption { flex: 1; padding: 18px 20px; }
+.project-showcase-grid .project-caption > div { display: flex; flex: 1; flex-direction: column; justify-content: space-between; }
 .project-showcase-grid .project-caption h3 { font-size: clamp(20px, 2.2vw, 28px); }
 .project-showcase-grid .project-caption p { font-size: 11px; }
 .construction-art { isolation: isolate; background: #767a73; color: #fff; }
@@ -584,3 +586,4 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .project-showcase-grid .project-feature-card .project-visual { min-height: 270px; }
   .project-showcase-grid .project-caption h3 { font-size: clamp(22px, 6vw, 28px); }
 }
+
