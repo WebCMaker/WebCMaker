@@ -11,9 +11,9 @@ const copySource = fs.readFileSync(path.join(root, 'content.js'), 'utf8');
 const appSource = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
 const base = 'https://webcmaker.github.io/WebCMaker/';
 const pages = [
-  { page: 'home', file: 'index.html', canonical: base, description: 'WebCMaker — дизайн и разработка лендингов и небольших сайтов. Адаптивная вёрстка и готовые файлы для вашего проекта.' },
+  { page: 'home', file: 'index.html', canonical: base, description: 'WebCMaker — лендинги, сайты компаний и интернет-магазины. Дизайн, разработка, онлайн-оплата и запуск сайта.' },
   { page: 'projects', file: 'projects.html', canonical: base + 'projects.html', description: 'Учебные концепты WebCMaker: кофейня TERRA и строительная компания FORMA. Дизайн и работающие сайты.' },
-  { page: 'services', file: 'services.html', canonical: base + 'services.html', description: 'Лендинги, сайты-визитки и редизайн от WebCMaker. Дизайн, адаптивная вёрстка и передача исходных файлов.' },
+  { page: 'services', file: 'services.html', canonical: base + 'services.html', description: 'Лендинги, сайты компаний, интернет-магазины и редизайн от WebCMaker. Подключение оплаты, домена и хостинга, публикация сайта.' },
   { page: 'brief', file: 'brief.html', canonical: base + 'brief.html', description: 'Расскажите WebCMaker о вашем проекте: формат сайта, задача и пожелания. Связь: webcmaker@gmail.com.' }
 ];
 
@@ -69,11 +69,11 @@ const rendered = pages.map(page => {
   <meta name="description" content="${escape(page.description)}">
   <title>${escape(title)}</title>
   <link rel="canonical" href="${page.canonical}">
-  <link rel="icon" href="favicon.svg?v=22" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg?v=23" type="image/svg+xml">
   <link rel="preload" href="manrope-variable.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css?v=22">
-  <script defer src="content.js?v=22"></script>
-  <script defer src="app.js?v=22"></script>
+  <link rel="stylesheet" href="styles.css?v=23">
+  <script defer src="content.js?v=23"></script>
+  <script defer src="app.js?v=23"></script>
 </head>
 <body data-page="${page.page}">
   <noscript><style>.copy-brief{display:none}</style><p class="container noscript-note">JavaScript отключён. Форма отправки работает. Также можно написать на <a href="mailto:webcmaker@gmail.com">webcmaker@gmail.com</a>.</p></noscript>

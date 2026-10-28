@@ -8,7 +8,7 @@ window.WEBIT_COPY = {
       "projects": "Работы",
       "brief": "Обсудить проект"
     },
-    "footerLine": "Сайты для бизнеса и личных проектов.",
+    "footerLine": "Сайты и интернет-магазины для вашего дела.",
     "footerLabel": "Дизайн и разработка сайтов",
     "contact": "На связи",
     "telegram": "Написать в Telegram",
@@ -19,17 +19,17 @@ window.WEBIT_COPY = {
     "home": {
       "eyebrow": "WebCMaker · дизайн и разработка",
       "title": "Сайты с характером. Для вашего дела.",
-      "intro": "Создаю лендинги и небольшие сайты: от дизайна до готовой вёрстки. Понятно, аккуратно и с вниманием к деталям.",
+      "intro": "Создаю сайты и интернет-магазины: от дизайна до запуска. Подключаю домен, хостинг и нужные сервисы.",
       "primary": "Смотреть работы",
       "secondary": "Обсудить проект",
-      "ribbon": "Идея → дизайн → готовый сайт",
-      "previewTitle": "От идеи до готового сайта",
-      "previewSub": "Дизайн, разработка и адаптация",
+      "ribbon": "Идея → дизайн → запуск",
+      "previewTitle": "От идеи до запуска",
+      "previewSub": "Дизайн, разработка и публикация",
       "previewSteps": [
         "Ваша задача",
         "Дизайн",
         "Разработка",
-        "Готовые файлы"
+        "Запуск"
       ],
       "trustTitle": "Всё понятно с первого шага",
       "trust": [
@@ -50,7 +50,7 @@ window.WEBIT_COPY = {
         ]
       ],
       "servicesTitle": "Под вашу задачу",
-      "servicesIntro": "Новый сайт или новый взгляд на существующий.",
+      "servicesIntro": "Лендинг, сайт компании, редизайн или интернет-магазин.",
       "services": [
         [
           "01",
@@ -69,6 +69,12 @@ window.WEBIT_COPY = {
           "Редизайн",
           "Свежий облик и удобная мобильная версия.",
           "После оценки"
+        ],
+        [
+          "04",
+          "Интернет-магазин",
+          "Каталог, корзина и заказ с оплатой через платёжный сервис.",
+          "Сроки и стоимость после оценки"
         ]
       ],
       "timingNote": "Сроки ориентировочные и зависят от объёма и готовности материалов.",
@@ -92,19 +98,19 @@ window.WEBIT_COPY = {
         [
           "03",
           "Разработка",
-          "Соберу сайт и адаптирую его под разные экраны."
+          "Соберу адаптивный сайт и подключу согласованные функции."
         ],
         [
           "04",
-          "Передача",
-          "Проверю страницы, внесу правки и передам готовые файлы."
+          "Запуск",
+          "Настрою домен и хостинг, опубликую сайт и передам доступы."
         ]
       ],
       "faqTitle": "Частые вопросы",
       "faq": [
         [
           "Сколько стоит сайт?",
-          "Для небольшого сайта ориентир — 3000–10 000 грн. Точную стоимость согласуем после обсуждения объёма."
+          "Для небольшого сайта ориентир — 3000–10 000 грн. Интернет-магазины оцениваю отдельно. Точную стоимость согласуем после обсуждения объёма."
         ],
         [
           "Какие правки включены?",
@@ -112,11 +118,11 @@ window.WEBIT_COPY = {
         ],
         [
           "Что я получу в конце?",
-          "Готовые файлы сайта и исходный код. Домен, хостинг и публикацию вы организуете со своей стороны."
+          "Работающий сайт, исходный код и доступы. Домен, хостинг, публикацию и подключение оплаты можно включить в проект."
         ],
         [
           "Какие сайты вы создаёте?",
-          "Лендинги, сайты-визитки и небольшие сайты компаний. Интернет-магазины и онлайн-платежи пока не беру."
+          "Лендинги, сайты компаний, редизайн и интернет-магазины. Онлайн-оплату подключаю через платёжный сервис."
         ]
       ],
       "finalTitle": "Есть идея? Давайте обсудим.",
@@ -126,7 +132,7 @@ window.WEBIT_COPY = {
     "services": {
       "eyebrow": "Услуги",
       "title": "Ваше дело. Ваш сайт.",
-      "intro": "Дизайн, адаптивная вёрстка и готовые файлы. Формат подбираю под задачу.",
+      "intro": "Дизайн, разработка и запуск. Формат сайта и подключения подбираю под вашу задачу.",
       "cards": [
         [
           "Лендинг",
@@ -139,7 +145,7 @@ window.WEBIT_COPY = {
             "Форма через согласованный сервис",
             "Meta-теги и favicon",
             "Оптимизация изображений",
-            "Передача исходников"
+            "Проверка и публикация"
           ]
         ],
         [
@@ -153,7 +159,7 @@ window.WEBIT_COPY = {
             "Каталог услуг",
             "Контакты и карта",
             "Форма через согласованный сервис",
-            "Передача исходников"
+            "Проверка и публикация"
           ]
         ],
         [
@@ -168,6 +174,20 @@ window.WEBIT_COPY = {
             "Оптимизация изображений",
             "Лёгкая анимация",
             "Проверка страниц"
+          ]
+        ],
+        [
+          "Интернет-магазин",
+          "Товары, корзина и заказы. Оплата — через платёжный сервис.",
+          [
+            "Каталог товаров",
+            "Карточки товаров",
+            "Корзина",
+            "Оформление заказа",
+            "Оплата через платёжный сервис",
+            "Мобильная версия",
+            "Уведомления о заказах",
+            "Проверка и публикация"
           ]
         ]
       ],
@@ -185,10 +205,15 @@ window.WEBIT_COPY = {
         "Лёгкая анимация",
         "Проверка страниц",
         "Базовая аналитика по согласованию",
-        "Файлы сайта и исходный код"
+        "Файлы сайта и исходный код",
+        "Каталог товаров и корзина",
+        "Оплата через платёжный сервис",
+        "Подключение домена",
+        "Настройка хостинга",
+        "Публикация сайта"
       ],
-      "limitsTitle": "Моя специализация",
-      "limitsText": "Лендинги и небольшие сайты. Интернет-магазины, онлайн-платежи и системы с чувствительными данными пока не беру. Домен, хостинг и публикация — на вашей стороне.",
+      "limitsTitle": "Что беру в работу",
+      "limitsText": "Лендинги, сайты компаний, редизайн и интернет-магазины. Оплату подключаю через платёжный сервис. Состав проекта и подключения согласуем до начала работы.",
       "revisionsTitle": "Место для правок",
       "revisionsText": "Два раунда правок на этапах дизайна и разработки. Собираем комментарии одним списком. Новые функции и дополнительные раунды согласуем отдельно.",
       "timingTitle": "Сколько времени нужно",
@@ -204,6 +229,10 @@ window.WEBIT_COPY = {
         [
           "Редизайн",
           "после оценки"
+        ],
+        [
+          "Интернет-магазин",
+          "сроки и стоимость после оценки"
         ]
       ],
       "timingNote": "Сроки зависят от объёма, материалов и времени на согласование.",
@@ -229,7 +258,7 @@ window.WEBIT_COPY = {
     "brief": {
       "eyebrow": "Начнём с идеи",
       "title": "Расскажите о вашем деле.",
-      "intro": "Коротко опишите задачу. Остальное уточним в разговоре.",
+      "intro": "Опишите сайт или магазин, который хотите создать. Остальное уточним в разговоре.",
       "formTitle": "Ваш будущий сайт",
       "name": "Ваше имя",
       "namePlaceholder": "Как к вам обращаться",
@@ -241,18 +270,19 @@ window.WEBIT_COPY = {
         "Лендинг",
         "Сайт-визитка",
         "Редизайн",
-        "Пока не знаю"
+        "Пока не знаю",
+        "Интернет-магазин"
       ],
       "business": "О чём ваш проект?",
       "businessPlaceholder": "Компания, услуга или идея",
       "audience": "Для кого сайт?",
       "audiencePlaceholder": "Кто ваши клиенты",
       "goal": "Главная задача сайта",
-      "goalPlaceholder": "Заявка, звонок, запись или знакомство с проектом",
+      "goalPlaceholder": "Заявка, звонок, заказ или оплата",
       "pages": "Страницы и разделы",
       "pagesPlaceholder": "Если пока не знаете — пропустите",
       "functions": "Нужные функции",
-      "functionsPlaceholder": "Форма, карта, каталог услуг или другое",
+      "functionsPlaceholder": "Форма, карта, каталог, корзина, оплата",
       "materials": "Что уже готово?",
       "materialsPlaceholder": "Тексты, фотографии, логотип",
       "style": "Стиль и примеры",
@@ -260,9 +290,9 @@ window.WEBIT_COPY = {
       "timing": "Когда нужен результат?",
       "timingPlaceholder": "Дата или примерный срок",
       "budget": "Бюджет, грн",
-      "budgetPlaceholder": "Например: 3000–10 000",
+      "budgetPlaceholder": "Укажите ориентир по бюджету",
       "extra": "Другие пожелания",
-      "extraPlaceholder": "Всё, что важно учесть",
+      "extraPlaceholder": "Домен, хостинг и другие пожелания",
       "submit": "Отправить бриф",
       "formNote": "Бриф отправится на мою почту через FormSubmit. Далее может появиться проверка от спама.",
       "directTitle": "Можно просто написать.",
@@ -281,7 +311,7 @@ window.WEBIT_COPY = {
       "projects": "Work",
       "brief": "Let’s talk"
     },
-    "footerLine": "Websites for businesses and personal projects.",
+    "footerLine": "Websites and online stores for your business.",
     "footerLabel": "Website design and development",
     "contact": "Get in touch",
     "telegram": "Message on Telegram",
@@ -292,17 +322,17 @@ window.WEBIT_COPY = {
     "home": {
       "eyebrow": "WebCMaker · design & development",
       "title": "Websites with character. Made for your business.",
-      "intro": "I create landing pages and small websites, from design to responsive code. Clear, considered and built with care.",
+      "intro": "I create websites and online stores, from design to launch. Domain, hosting and service connections can be included.",
       "primary": "View my work",
       "secondary": "Let’s talk",
-      "ribbon": "Idea → design → finished website",
-      "previewTitle": "From idea to finished website",
-      "previewSub": "Design, development and responsive layouts",
+      "ribbon": "Idea → design → launch",
+      "previewTitle": "From idea to launch",
+      "previewSub": "Design, development and publishing",
       "previewSteps": [
         "Your brief",
         "Design",
         "Development",
-        "Source handoff"
+        "Launch"
       ],
       "trustTitle": "Clear from the first step",
       "trust": [
@@ -323,7 +353,7 @@ window.WEBIT_COPY = {
         ]
       ],
       "servicesTitle": "Built around your brief",
-      "servicesIntro": "A new website or a fresh look at an existing one.",
+      "servicesIntro": "A landing page, business website, redesign or online store.",
       "services": [
         [
           "01",
@@ -342,6 +372,12 @@ window.WEBIT_COPY = {
           "Redesign",
           "A fresh look and a better mobile experience.",
           "After scope review"
+        ],
+        [
+          "04",
+          "Online store",
+          "Products, a cart and checkout with a payment service.",
+          "Timing and cost after scope review"
         ]
       ],
       "timingNote": "Estimated timing depends on scope and ready-to-use content.",
@@ -365,19 +401,19 @@ window.WEBIT_COPY = {
         [
           "03",
           "Development",
-          "I build the site and adapt it to different screens."
+          "I build a responsive website and connect the agreed features."
         ],
         [
           "04",
-          "Handoff",
-          "I check the pages, make revisions and deliver the source files."
+          "Launch",
+          "I set up the domain and hosting, publish the site and hand over access."
         ]
       ],
       "faqTitle": "A few useful answers",
       "faq": [
         [
           "How much does a website cost?",
-          "For a small site, the guide range is UAH 3,000–10,000. We agree the exact price after reviewing the scope."
+          "For a small site, the guide range is UAH 3,000–10,000. Online stores are quoted separately. We agree the exact price after reviewing the scope."
         ],
         [
           "What revisions are included?",
@@ -385,11 +421,11 @@ window.WEBIT_COPY = {
         ],
         [
           "What will I receive?",
-          "The finished website files and source code. You arrange the domain, hosting and publishing on your side."
+          "A working website, source code and access. Domain, hosting, publishing and payment service setup can be included."
         ],
         [
           "What kind of websites do you build?",
-          "Landing pages, small business websites and redesigns. I do not currently take on online stores or payment integrations."
+          "Landing pages, business websites, redesigns and online stores. Online payments are connected through a payment service."
         ]
       ],
       "finalTitle": "Have an idea? Let’s talk.",
@@ -399,7 +435,7 @@ window.WEBIT_COPY = {
     "services": {
       "eyebrow": "Services",
       "title": "Your business. Your website.",
-      "intro": "Design, responsive development and source files. A format that fits your brief.",
+      "intro": "Design, development and launch. A website format and service connections that fit your brief.",
       "cards": [
         [
           "Landing page",
@@ -412,7 +448,7 @@ window.WEBIT_COPY = {
             "Form via an agreed service",
             "Meta tags and favicon",
             "Image optimisation",
-            "Source code handoff"
+            "Checks and publishing"
           ]
         ],
         [
@@ -426,7 +462,7 @@ window.WEBIT_COPY = {
             "Service catalogue",
             "Contact details and map",
             "Form via an agreed service",
-            "Source code handoff"
+            "Checks and publishing"
           ]
         ],
         [
@@ -441,6 +477,20 @@ window.WEBIT_COPY = {
             "Image optimisation",
             "Subtle animation",
             "Page checks"
+          ]
+        ],
+        [
+          "Online store",
+          "Products, a cart and orders. Payments through a payment service.",
+          [
+            "Product catalogue",
+            "Product pages",
+            "Shopping cart",
+            "Checkout",
+            "Payment service setup",
+            "Mobile layouts",
+            "Order notifications",
+            "Checks and publishing"
           ]
         ]
       ],
@@ -458,10 +508,15 @@ window.WEBIT_COPY = {
         "Subtle animation",
         "Page checks",
         "Basic analytics where agreed",
-        "Website files and source code"
+        "Website files and source code",
+        "Product catalogue and cart",
+        "Payment service setup",
+        "Domain setup",
+        "Hosting setup",
+        "Website publishing"
       ],
-      "limitsTitle": "My focus",
-      "limitsText": "Landing pages and small websites. I do not currently build online stores, payment flows or systems handling sensitive data. You arrange the domain, hosting and publishing.",
+      "limitsTitle": "What I build",
+      "limitsText": "Landing pages, business websites, redesigns and online stores. Payments run through a payment service. Scope and service connections are agreed before work begins.",
       "revisionsTitle": "Room for revisions",
       "revisionsText": "Two revision rounds in the design and development stages. Feedback is collected in one list. New features and extra rounds are agreed separately.",
       "timingTitle": "A guide to timing",
@@ -477,6 +532,10 @@ window.WEBIT_COPY = {
         [
           "Redesign",
           "after scope review"
+        ],
+        [
+          "Online store",
+          "timing and cost after scope review"
         ]
       ],
       "timingNote": "Timing depends on scope, content and feedback turnaround.",
@@ -502,7 +561,7 @@ window.WEBIT_COPY = {
     "brief": {
       "eyebrow": "Start with an idea",
       "title": "Tell me about your business.",
-      "intro": "A short description is enough to start. We can work out the details together.",
+      "intro": "Describe the website or online store you have in mind. We can work out the details together.",
       "formTitle": "Your future website",
       "name": "Your name",
       "namePlaceholder": "What should I call you?",
@@ -514,18 +573,19 @@ window.WEBIT_COPY = {
         "Landing page",
         "Business website",
         "Redesign",
-        "Not sure yet"
+        "Not sure yet",
+        "Online store"
       ],
       "business": "What is your project about?",
       "businessPlaceholder": "Your company, service or idea",
       "audience": "Who is the site for?",
       "audiencePlaceholder": "Your customers or audience",
       "goal": "The main goal",
-      "goalPlaceholder": "An enquiry, call, booking or introduction",
+      "goalPlaceholder": "An enquiry, call, order or payment",
       "pages": "Pages and sections",
       "pagesPlaceholder": "Skip this if you are not sure yet",
       "functions": "Features you need",
-      "functionsPlaceholder": "A form, map, service catalogue or something else",
+      "functionsPlaceholder": "A form, map, catalogue, cart or payments",
       "materials": "What is already ready?",
       "materialsPlaceholder": "Text, photos, logo",
       "style": "Style and references",
@@ -533,9 +593,9 @@ window.WEBIT_COPY = {
       "timing": "When do you need it?",
       "timingPlaceholder": "A date or approximate timeframe",
       "budget": "Budget, UAH",
-      "budgetPlaceholder": "For example: 3,000–10,000",
+      "budgetPlaceholder": "Your approximate budget",
       "extra": "Anything else?",
-      "extraPlaceholder": "Anything I should keep in mind",
+      "extraPlaceholder": "Domain, hosting and any other preferences",
       "submit": "Send brief",
       "formNote": "Your brief is sent to my email via FormSubmit. A spam check may appear next.",
       "directTitle": "An email works too.",
@@ -554,7 +614,7 @@ window.WEBIT_COPY = {
       "projects": "Роботи",
       "brief": "Обговорити проєкт"
     },
-    "footerLine": "Сайти для бізнесу й особистих проєктів.",
+    "footerLine": "Сайти й інтернет-магазини для вашої справи.",
     "footerLabel": "Дизайн і розробка сайтів",
     "contact": "На зв’язку",
     "telegram": "Написати в Telegram",
@@ -565,17 +625,17 @@ window.WEBIT_COPY = {
     "home": {
       "eyebrow": "WebCMaker · дизайн і розробка",
       "title": "Сайти з характером. Для вашої справи.",
-      "intro": "Створюю лендінги та невеликі сайти: від дизайну до готової верстки. Зрозуміло, охайно й з увагою до деталей.",
+      "intro": "Створюю сайти й інтернет-магазини: від дизайну до запуску. Підключаю домен, хостинг і потрібні сервіси.",
       "primary": "Переглянути роботи",
       "secondary": "Обговорити проєкт",
-      "ribbon": "Ідея → дизайн → готовий сайт",
-      "previewTitle": "Від ідеї до готового сайту",
-      "previewSub": "Дизайн, розробка й адаптація",
+      "ribbon": "Ідея → дизайн → запуск",
+      "previewTitle": "Від ідеї до запуску",
+      "previewSub": "Дизайн, розробка й публікація",
       "previewSteps": [
         "Ваша задача",
         "Дизайн",
         "Розробка",
-        "Готові файли"
+        "Запуск"
       ],
       "trustTitle": "Усе зрозуміло з першого кроку",
       "trust": [
@@ -596,7 +656,7 @@ window.WEBIT_COPY = {
         ]
       ],
       "servicesTitle": "Під вашу задачу",
-      "servicesIntro": "Новий сайт або новий погляд на наявний.",
+      "servicesIntro": "Лендінг, сайт компанії, редизайн чи інтернет-магазин.",
       "services": [
         [
           "01",
@@ -615,6 +675,12 @@ window.WEBIT_COPY = {
           "Редизайн",
           "Свіжий вигляд і зручна мобільна версія.",
           "Після оцінки"
+        ],
+        [
+          "04",
+          "Інтернет-магазин",
+          "Каталог, кошик і замовлення з оплатою через платіжний сервіс.",
+          "Строки й вартість після оцінки"
         ]
       ],
       "timingNote": "Строки орієнтовні й залежать від обсягу та готовності матеріалів.",
@@ -638,19 +704,19 @@ window.WEBIT_COPY = {
         [
           "03",
           "Розробка",
-          "Створю сайт і адаптую його до різних екранів."
+          "Створю адаптивний сайт і підключу погоджені функції."
         ],
         [
           "04",
-          "Передача",
-          "Перевірю сторінки, внесу правки й передам готові файли."
+          "Запуск",
+          "Налаштую домен і хостинг, опублікую сайт і передам доступи."
         ]
       ],
       "faqTitle": "Часті запитання",
       "faq": [
         [
           "Скільки коштує сайт?",
-          "Для невеликого сайту орієнтир — 3000–10 000 грн. Точну вартість погодимо після обговорення обсягу."
+          "Для невеликого сайту орієнтир — 3000–10 000 грн. Інтернет-магазини оцінюю окремо. Точну вартість погодимо після обговорення обсягу."
         ],
         [
           "Які правки включені?",
@@ -658,11 +724,11 @@ window.WEBIT_COPY = {
         ],
         [
           "Що я отримаю в кінці?",
-          "Готові файли сайту та вихідний код. Домен, хостинг і публікацію ви організуєте зі свого боку."
+          "Готовий сайт, вихідний код і доступи. Домен, хостинг, публікацію та підключення оплати можна включити в проєкт."
         ],
         [
           "Які сайти ви створюєте?",
-          "Лендінги, сайти-візитки й невеликі сайти компаній. Інтернет-магазини та онлайн-платежі поки не беру."
+          "Лендінги, сайти компаній, редизайн та інтернет-магазини. Онлайн-оплату підключаю через платіжний сервіс."
         ]
       ],
       "finalTitle": "Є ідея? Обговорімо.",
@@ -672,7 +738,7 @@ window.WEBIT_COPY = {
     "services": {
       "eyebrow": "Послуги",
       "title": "Ваша справа. Ваш сайт.",
-      "intro": "Дизайн, адаптивна верстка й готові файли. Формат підбираю під задачу.",
+      "intro": "Дизайн, розробка й запуск. Формат сайту та підключення підбираю під вашу задачу.",
       "cards": [
         [
           "Лендінг",
@@ -685,7 +751,7 @@ window.WEBIT_COPY = {
             "Форма через погоджений сервіс",
             "Meta-теги та favicon",
             "Оптимізація зображень",
-            "Передача вихідного коду"
+            "Перевірка й публікація"
           ]
         ],
         [
@@ -699,7 +765,7 @@ window.WEBIT_COPY = {
             "Каталог послуг",
             "Контакти й карта",
             "Форма через погоджений сервіс",
-            "Передача вихідного коду"
+            "Перевірка й публікація"
           ]
         ],
         [
@@ -714,6 +780,20 @@ window.WEBIT_COPY = {
             "Оптимізація зображень",
             "Легка анімація",
             "Перевірка сторінок"
+          ]
+        ],
+        [
+          "Інтернет-магазин",
+          "Товари, кошик і замовлення. Оплата — через платіжний сервіс.",
+          [
+            "Каталог товарів",
+            "Картки товарів",
+            "Кошик",
+            "Оформлення замовлення",
+            "Оплата через платіжний сервіс",
+            "Мобільна версія",
+            "Сповіщення про замовлення",
+            "Перевірка й публікація"
           ]
         ]
       ],
@@ -731,10 +811,15 @@ window.WEBIT_COPY = {
         "Легка анімація",
         "Перевірка сторінок",
         "Базова аналітика за погодженням",
-        "Файли сайту та вихідний код"
+        "Файли сайту та вихідний код",
+        "Каталог товарів і кошик",
+        "Оплата через платіжний сервіс",
+        "Підключення домену",
+        "Налаштування хостингу",
+        "Публікація сайту"
       ],
-      "limitsTitle": "Моя спеціалізація",
-      "limitsText": "Лендінги та невеликі сайти. Інтернет-магазини, онлайн-платежі й системи з чутливими даними поки не беру. Домен, хостинг і публікація — на вашій стороні.",
+      "limitsTitle": "Що беру в роботу",
+      "limitsText": "Лендінги, сайти компаній, редизайн та інтернет-магазини. Оплату підключаю через платіжний сервіс. Склад проєкту й підключення погоджуємо до початку роботи.",
       "revisionsTitle": "Місце для правок",
       "revisionsText": "Два раунди правок на етапах дизайну та розробки. Збираємо коментарі одним списком. Нові функції та додаткові раунди погоджуємо окремо.",
       "timingTitle": "Скільки часу потрібно",
@@ -750,6 +835,10 @@ window.WEBIT_COPY = {
         [
           "Редизайн",
           "після оцінки"
+        ],
+        [
+          "Інтернет-магазин",
+          "строки й вартість після оцінки"
         ]
       ],
       "timingNote": "Строки залежать від обсягу, матеріалів і часу на погодження.",
@@ -775,7 +864,7 @@ window.WEBIT_COPY = {
     "brief": {
       "eyebrow": "Почнімо з ідеї",
       "title": "Розкажіть про вашу справу.",
-      "intro": "Коротко опишіть задачу. Решту уточнимо в розмові.",
+      "intro": "Опишіть сайт чи магазин, який хочете створити. Решту уточнимо в розмові.",
       "formTitle": "Ваш майбутній сайт",
       "name": "Ваше ім’я",
       "namePlaceholder": "Як до вас звертатися",
@@ -787,18 +876,19 @@ window.WEBIT_COPY = {
         "Лендінг",
         "Сайт-візитка",
         "Редизайн",
-        "Поки не знаю"
+        "Поки не знаю",
+        "Інтернет-магазин"
       ],
       "business": "Про що ваш проєкт?",
       "businessPlaceholder": "Компанія, послуга чи ідея",
       "audience": "Для кого сайт?",
       "audiencePlaceholder": "Хто ваші клієнти",
       "goal": "Головна задача сайту",
-      "goalPlaceholder": "Заявка, дзвінок, запис або знайомство з проєктом",
+      "goalPlaceholder": "Заявка, дзвінок, замовлення чи оплата",
       "pages": "Сторінки та розділи",
       "pagesPlaceholder": "Якщо ще не знаєте — пропустіть",
       "functions": "Потрібні функції",
-      "functionsPlaceholder": "Форма, карта, каталог послуг або інше",
+      "functionsPlaceholder": "Форма, карта, каталог, кошик, оплата",
       "materials": "Що вже готово?",
       "materialsPlaceholder": "Тексти, фотографії, логотип",
       "style": "Стиль і приклади",
@@ -806,9 +896,9 @@ window.WEBIT_COPY = {
       "timing": "Коли потрібен результат?",
       "timingPlaceholder": "Дата або приблизний строк",
       "budget": "Бюджет, грн",
-      "budgetPlaceholder": "Наприклад: 3000–10 000",
+      "budgetPlaceholder": "Укажіть орієнтовний бюджет",
       "extra": "Інші побажання",
-      "extraPlaceholder": "Усе, що важливо врахувати",
+      "extraPlaceholder": "Домен, хостинг та інші побажання",
       "submit": "Надіслати бриф",
       "formNote": "Бриф надійде на мою пошту через FormSubmit. Далі може з’явитися перевірка від спаму.",
       "directTitle": "Можна просто написати.",
