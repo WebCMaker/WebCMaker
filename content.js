@@ -134,8 +134,12 @@ window.WEBIT_COPY = {
           [
             "Дизайн в Figma",
             "Адаптивная вёрстка",
-            "Кнопки и формы",
-            "Проверка на разных экранах"
+            "Контакты и карта",
+            "Кнопки мессенджеров",
+            "Форма через согласованный сервис",
+            "Meta-теги и favicon",
+            "Оптимизация изображений",
+            "Передача исходников"
           ]
         ],
         [
@@ -143,9 +147,13 @@ window.WEBIT_COPY = {
           "Компактный сайт о компании, специалисте или услуге.",
           [
             "Несколько страниц",
-            "Дизайн и разработка",
-            "Мобильная версия",
-            "Передача исходного кода"
+            "Единый стиль",
+            "Меню и навигация",
+            "Мобильная и планшетная версии",
+            "Каталог услуг",
+            "Контакты и карта",
+            "Форма через согласованный сервис",
+            "Передача исходников"
           ]
         ],
         [
@@ -154,18 +162,30 @@ window.WEBIT_COPY = {
           [
             "Разбор текущих страниц",
             "Обновлённый дизайн",
+            "Удобная навигация",
             "Адаптация под телефон",
-            "Проверка изменений"
+            "Обновление текстов и фото",
+            "Оптимизация изображений",
+            "Лёгкая анимация",
+            "Проверка страниц"
           ]
         ]
       ],
       "includedTitle": "Что можно включить в проект",
       "included": [
-        "Дизайн интерфейса в Figma",
+        "Дизайн в Figma",
         "Вёрстка на HTML, CSS и JavaScript",
-        "Мобильная и планшетная версии",
-        "Формы и базовая аналитика по задаче",
-        "Передача файлов и исходного кода"
+        "Телефон, планшет и компьютер",
+        "Меню и навигация",
+        "Контакты и карта",
+        "Кнопки звонка и мессенджеров",
+        "Формы через согласованный сервис",
+        "Базовые meta-теги и favicon",
+        "Оптимизация изображений",
+        "Лёгкая анимация",
+        "Проверка страниц",
+        "Базовая аналитика по согласованию",
+        "Файлы сайта и исходный код"
       ],
       "limitsTitle": "Моя специализация",
       "limitsText": "Лендинги и небольшие сайты. Интернет-магазины, онлайн-платежи и системы с чувствительными данными пока не беру. Домен, хостинг и публикация — на вашей стороне.",
@@ -243,13 +263,13 @@ window.WEBIT_COPY = {
       "budgetPlaceholder": "Например: 3000–10 000",
       "extra": "Другие пожелания",
       "extraPlaceholder": "Всё, что важно учесть",
-      "submit": "Открыть письмо с брифом",
-      "formNote": "Откроется черновик в вашей почте. Проверьте его и отправьте письмо.",
+      "submit": "Отправить бриф",
+      "formNote": "Бриф отправится на мою почту через FormSubmit. Далее может появиться проверка от спама.",
       "directTitle": "Можно просто написать.",
       "directText": "Если удобнее начать с письма — я на связи.",
       "required": "Обязательное поле",
       "emailSubject": "Бриф на сайт — WebCMaker",
-      "mailOpened": "Открываю почтовый черновик. Отправьте его из своей почты.",
+      "mailOpened": "Переходим к проверке и отправке…",
       "copyFallback": "Скопируйте ответы вручную и пришлите их на почту."
     }
   },
@@ -387,8 +407,12 @@ window.WEBIT_COPY = {
           [
             "Design in Figma",
             "Responsive development",
-            "Buttons and forms",
-            "Checks across screen sizes"
+            "Contact details and map",
+            "Messenger links",
+            "Form via an agreed service",
+            "Meta tags and favicon",
+            "Image optimisation",
+            "Source code handoff"
           ]
         ],
         [
@@ -396,8 +420,12 @@ window.WEBIT_COPY = {
           "A compact introduction to your company, service or practice.",
           [
             "Multiple pages",
-            "Design and development",
-            "Mobile layouts",
+            "A consistent visual style",
+            "Menus and navigation",
+            "Mobile and tablet layouts",
+            "Service catalogue",
+            "Contact details and map",
+            "Form via an agreed service",
             "Source code handoff"
           ]
         ],
@@ -405,19 +433,31 @@ window.WEBIT_COPY = {
           "Redesign",
           "A visual and usability refresh for an existing website.",
           [
-            "Current page review",
+            "Review of existing pages",
             "Updated design",
+            "Clear navigation",
             "Mobile adaptation",
-            "Checks of the changes"
+            "Text and photo updates",
+            "Image optimisation",
+            "Subtle animation",
+            "Page checks"
           ]
         ]
       ],
       "includedTitle": "What your project can include",
       "included": [
-        "Interface design in Figma",
+        "Design in Figma",
         "HTML, CSS and JavaScript development",
-        "Mobile and tablet layouts",
-        "Forms and basic analytics where agreed",
+        "Phone, tablet and desktop layouts",
+        "Menus and navigation",
+        "Contact details and map",
+        "Call and messenger links",
+        "Forms via an agreed service",
+        "Basic meta tags and favicon",
+        "Image optimisation",
+        "Subtle animation",
+        "Page checks",
+        "Basic analytics where agreed",
         "Website files and source code"
       ],
       "limitsTitle": "My focus",
@@ -496,13 +536,13 @@ window.WEBIT_COPY = {
       "budgetPlaceholder": "For example: 3,000–10,000",
       "extra": "Anything else?",
       "extraPlaceholder": "Anything I should keep in mind",
-      "submit": "Open the email draft",
-      "formNote": "A draft will open in your email app. Review it and send the message.",
+      "submit": "Send brief",
+      "formNote": "Your brief is sent to my email via FormSubmit. A spam check may appear next.",
       "directTitle": "An email works too.",
       "directText": "Prefer to start with a message? Get in touch.",
       "required": "Required",
       "emailSubject": "Website brief — WebCMaker",
-      "mailOpened": "Opening your email draft. Send it from your email app.",
+      "mailOpened": "Opening verification and submission…",
       "copyFallback": "Copy your answers manually and send them by email."
     }
   },
@@ -640,8 +680,12 @@ window.WEBIT_COPY = {
           [
             "Дизайн у Figma",
             "Адаптивна верстка",
-            "Кнопки й форми",
-            "Перевірка на різних екранах"
+            "Контакти й карта",
+            "Кнопки месенджерів",
+            "Форма через погоджений сервіс",
+            "Meta-теги та favicon",
+            "Оптимізація зображень",
+            "Передача вихідного коду"
           ]
         ],
         [
@@ -649,8 +693,12 @@ window.WEBIT_COPY = {
           "Компактний сайт про компанію, фахівця чи послугу.",
           [
             "Кілька сторінок",
-            "Дизайн і розробка",
-            "Мобільна версія",
+            "Єдиний стиль",
+            "Меню й навігація",
+            "Мобільна й планшетна версії",
+            "Каталог послуг",
+            "Контакти й карта",
+            "Форма через погоджений сервіс",
             "Передача вихідного коду"
           ]
         ],
@@ -660,18 +708,30 @@ window.WEBIT_COPY = {
           [
             "Аналіз поточних сторінок",
             "Оновлений дизайн",
+            "Зручна навігація",
             "Адаптація до телефона",
-            "Перевірка змін"
+            "Оновлення текстів і фото",
+            "Оптимізація зображень",
+            "Легка анімація",
+            "Перевірка сторінок"
           ]
         ]
       ],
       "includedTitle": "Що можна включити в проєкт",
       "included": [
-        "Дизайн інтерфейсу у Figma",
+        "Дизайн у Figma",
         "Верстка на HTML, CSS і JavaScript",
-        "Мобільна й планшетна версії",
-        "Форми й базова аналітика за потреби",
-        "Передача файлів і вихідного коду"
+        "Телефон, планшет і комп’ютер",
+        "Меню й навігація",
+        "Контакти й карта",
+        "Кнопки дзвінка й месенджерів",
+        "Форми через погоджений сервіс",
+        "Базові meta-теги та favicon",
+        "Оптимізація зображень",
+        "Легка анімація",
+        "Перевірка сторінок",
+        "Базова аналітика за погодженням",
+        "Файли сайту та вихідний код"
       ],
       "limitsTitle": "Моя спеціалізація",
       "limitsText": "Лендінги та невеликі сайти. Інтернет-магазини, онлайн-платежі й системи з чутливими даними поки не беру. Домен, хостинг і публікація — на вашій стороні.",
@@ -749,13 +809,13 @@ window.WEBIT_COPY = {
       "budgetPlaceholder": "Наприклад: 3000–10 000",
       "extra": "Інші побажання",
       "extraPlaceholder": "Усе, що важливо врахувати",
-      "submit": "Відкрити лист із брифом",
-      "formNote": "Відкриється чернетка у вашій пошті. Перевірте її та надішліть лист.",
+      "submit": "Надіслати бриф",
+      "formNote": "Бриф надійде на мою пошту через FormSubmit. Далі може з’явитися перевірка від спаму.",
       "directTitle": "Можна просто написати.",
       "directText": "Якщо зручніше почати з листа — я на зв’язку.",
       "required": "Обов’язкове поле",
       "emailSubject": "Бриф на сайт — WebCMaker",
-      "mailOpened": "Відкриваю поштову чернетку. Надішліть її зі своєї пошти.",
+      "mailOpened": "Переходимо до перевірки та надсилання…",
       "copyFallback": "Скопіюйте відповіді вручну й надішліть їх на пошту."
     }
   }

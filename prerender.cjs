@@ -69,14 +69,14 @@ const rendered = pages.map(page => {
   <meta name="description" content="${escape(page.description)}">
   <title>${escape(title)}</title>
   <link rel="canonical" href="${page.canonical}">
-  <link rel="icon" href="favicon.svg?v=21" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg?v=22" type="image/svg+xml">
   <link rel="preload" href="manrope-variable.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css?v=21">
-  <script defer src="content.js?v=21"></script>
-  <script defer src="app.js?v=21"></script>
+  <link rel="stylesheet" href="styles.css?v=22">
+  <script defer src="content.js?v=22"></script>
+  <script defer src="app.js?v=22"></script>
 </head>
 <body data-page="${page.page}">
-  <noscript><p class="container noscript-note">JavaScript отключён. Для обсуждения проекта напишите на <a href="mailto:webcmaker@gmail.com">webcmaker@gmail.com</a>.</p></noscript>
+  <noscript><style>.copy-brief{display:none}</style><p class="container noscript-note">JavaScript отключён. Форма отправки работает. Также можно написать на <a href="mailto:webcmaker@gmail.com">webcmaker@gmail.com</a>.</p></noscript>
   <div id="app">${markup}</div>
 </body>
 </html>

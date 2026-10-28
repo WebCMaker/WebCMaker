@@ -1,4 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620" fill="none">
+  <style>
+    .motion { transform-box: fill-box; transform-origin: center; }
+    .hero-flower-motion { animation: flower-turn 28s linear infinite; }
+    .hero-phone-motion { animation: phone-hover 6.8s ease-in-out infinite; }
+    .hero-cursor-motion { animation: cursor-glide 7.6s ease-in-out infinite; }
+    .hero-badge-motion { animation: badge-bob 5.4s ease-in-out infinite; }
+    .hero-spark { animation: spark-breathe 4.6s ease-in-out infinite; }
+    .hero-spark-late { animation-delay: -2.3s; }
+    @keyframes flower-turn { to { transform: rotate(360deg); } }
+    @keyframes phone-hover {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-3px, -10px); }
+    }
+    @keyframes cursor-glide {
+      0%, 100% { transform: translate(0, 0); }
+      32% { transform: translate(11px, -14px); }
+      64% { transform: translate(-5px, -5px); }
+    }
+    @keyframes badge-bob {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(-4deg); }
+    }
+    @keyframes spark-breathe {
+      0%, 100% { transform: scale(.8); opacity: .55; }
+      50% { transform: scale(1.12); opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .motion { animation: none !important; }
+    }
+  </style>
   <defs>
     <filter id="browser-shadow" x="-30%" y="-30%" width="170%" height="190%" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="22" stdDeviation="23" flood-color="#1F3268" flood-opacity=".10"/>
@@ -80,6 +110,7 @@
 
   <!-- A soft solid asterisk is the centrepiece, like a little digital sculpture. -->
   <g transform="translate(477 284) rotate(16)">
+   <g class="motion hero-flower-motion">
     <ellipse cx="9" cy="28" rx="106" ry="89" fill="#1238AD" fill-opacity=".05"/>
     <g transform="translate(6 11)" mask="url(#flower)">
       <rect x="-130" y="-130" width="260" height="260" fill="url(#flower-side)"/>
@@ -89,9 +120,11 @@
       <path d="M-101 -9C-72 -27-42 -30-9 -26" stroke="white" stroke-opacity=".15" stroke-width="2" stroke-linecap="round"/>
       <path d="M20 -90C36 -77 45 -59 47 -42" stroke="white" stroke-opacity=".15" stroke-width="2" stroke-linecap="round"/>
     </g>
+   </g>
   </g>
 
   <!-- A compact mobile view echoes the real responsive work. -->
+  <g class="motion hero-phone-motion">
   <g transform="rotate(10 535 426)" filter="url(#small-shadow)">
     <rect x="486" y="343" width="104" height="177" rx="22" fill="#17191F"/>
     <rect x="492" y="349" width="92" height="165" rx="17" fill="white"/>
@@ -105,17 +138,22 @@
     <rect x="503" y="485" width="67" height="13" rx="6.5" fill="#2457F5"/>
     <rect x="526" y="506" width="24" height="3" rx="1.5" fill="#D5DBE8"/>
   </g>
+  </g>
 
   <!-- An oversized pointer adds a human trace without a mascot. -->
+  <g class="motion hero-cursor-motion">
   <g transform="translate(249 373) rotate(-8)" filter="url(#small-shadow)">
     <path d="M5 2L6 95L29 73L46 112L65 103L48 66L80 62L5 2Z" fill="#17191F" stroke="white" stroke-width="6" stroke-linejoin="round"/>
   </g>
+  </g>
 
+  <g class="motion hero-badge-motion">
   <g transform="rotate(12 578 127)" filter="url(#small-shadow)">
     <rect x="546" y="95" width="64" height="64" rx="19" fill="#DDF3A1"/>
     <path d="M563 126L574 137L594 116" stroke="#17191F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <path d="M173 88V106M164 97H182" stroke="#2457F5" stroke-width="2" stroke-linecap="round"/>
-  <path d="M621 401V413M615 407H627" stroke="#9EB6F8" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <path class="motion hero-spark" d="M173 88V106M164 97H182" stroke="#2457F5" stroke-width="2" stroke-linecap="round"/>
+  <path class="motion hero-spark hero-spark-late" d="M621 401V413M615 407H627" stroke="#9EB6F8" stroke-width="1.6" stroke-linecap="round"/>
   <circle cx="390" cy="520" r="4" fill="#2457F5"/>
 </svg>
