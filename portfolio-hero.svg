@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620" fill="none">
+  <defs>
+    <filter id="browser-shadow" x="-30%" y="-30%" width="170%" height="190%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="23" flood-color="#1F3268" flood-opacity=".10"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1F3268" flood-opacity=".04"/>
+    </filter>
+    <filter id="small-shadow" x="-60%" y="-40%" width="230%" height="230%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1F3268" flood-opacity=".14"/>
+    </filter>
+    <linearGradient id="flower-face" x1="-100" y1="-106" x2="90" y2="113" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5681FF"/>
+      <stop offset=".45" stop-color="#2457F5"/>
+      <stop offset="1" stop-color="#1741CB"/>
+    </linearGradient>
+    <linearGradient id="flower-side" x1="-100" y1="-90" x2="100" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2457F5"/>
+      <stop offset="1" stop-color="#1238AD"/>
+    </linearGradient>
+    <mask id="flower" x="-130" y="-130" width="260" height="260" maskUnits="userSpaceOnUse">
+      <rect x="-115" y="-30" width="230" height="60" rx="30" fill="white"/>
+      <rect x="-115" y="-30" width="230" height="60" rx="30" fill="white" transform="rotate(60)"/>
+      <rect x="-115" y="-30" width="230" height="60" rx="30" fill="white" transform="rotate(120)"/>
+    </mask>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" stroke="#D5DFF5" stroke-width=".8"/>
+    </pattern>
+    <clipPath id="canvas-clip"><rect x="325" y="195" width="208" height="181" rx="13"/></clipPath>
+  </defs>
+
+  <!-- A quiet drafting surface keeps the composition light on any page. -->
+  <ellipse cx="368" cy="340" rx="252" ry="210" fill="#EAF0FF" fill-opacity=".65"/>
+  <ellipse cx="373" cy="340" rx="284" ry="238" stroke="#DDE5F5" stroke-dasharray="3 9"/>
+  <path d="M88 428V183M67 208H629M122 494H657" stroke="#D8E1F2" stroke-width="1"/>
+  <path d="M82 183H94M88 177V189M61 208H73M67 202V214M651 494H663M657 488V500" stroke="#B9C8E6" stroke-width="1.5"/>
+  <circle cx="88" cy="428" r="5" fill="#2457F5"/>
+  <circle cx="628" cy="209" r="4" fill="#DDF3A1" stroke="#B7D77B"/>
+
+  <!-- The browser is an illustration, with no language-dependent UI copy. -->
+  <g transform="rotate(-7 338 284)" filter="url(#browser-shadow)">
+    <rect x="105" y="126" width="466" height="319" rx="21" fill="white" stroke="#D8DEEA" stroke-width="1.2"/>
+    <path d="M126 126H550C561.598 126 571 135.402 571 147V171H105V147C105 135.402 114.402 126 126 126Z" fill="#FBFCFF"/>
+    <path d="M105 171H571" stroke="#E6EAF2"/>
+    <circle cx="127" cy="149" r="4" fill="#BAC9F0"/>
+    <circle cx="141" cy="149" r="4" fill="#D1DBF3"/>
+    <circle cx="155" cy="149" r="4" fill="#E0E6F4"/>
+    <rect x="239" y="140" width="184" height="17" rx="8.5" fill="#F0F3FA"/>
+    <rect x="288" y="147" width="85" height="3" rx="1.5" fill="#C7D0E4"/>
+    <path d="M540 145H549M540 149H549M540 153H546" stroke="#8C9CBA" stroke-width="1.5" stroke-linecap="round"/>
+
+    <rect x="132" y="197" width="27" height="27" rx="8" fill="#2457F5"/>
+    <path d="M138 205L141 216L145 207L149 216L152 205" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="174" y="202" width="65" height="5" rx="2.5" fill="#17191F"/>
+    <rect x="174" y="213" width="43" height="4" rx="2" fill="#B7C0D2"/>
+    <rect x="132" y="249" width="155" height="15" rx="5" fill="#17191F"/>
+    <rect x="132" y="274" width="121" height="15" rx="5" fill="#17191F"/>
+    <rect x="132" y="307" width="133" height="4" rx="2" fill="#B7C0D2"/>
+    <rect x="132" y="318" width="112" height="4" rx="2" fill="#CFD6E4"/>
+    <rect x="132" y="341" width="107" height="34" rx="17" fill="#2457F5"/>
+    <rect x="149" y="355" width="50" height="5" rx="2.5" fill="white"/>
+    <path d="M212 361L219 354M213 354H219V360" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g clip-path="url(#canvas-clip)">
+      <rect x="325" y="195" width="208" height="181" rx="13" fill="#EFF3FF"/>
+      <rect x="325" y="195" width="208" height="181" fill="url(#grid)"/>
+      <circle cx="430" cy="285" r="62" stroke="#C9D6F7" stroke-width="1.1"/>
+      <circle cx="430" cy="285" r="91" stroke="#D7E1F7" stroke-width="1.1"/>
+    </g>
+
+    <path d="M132 398H533" stroke="#EDF0F6"/>
+    <rect x="132" y="414" width="71" height="4" rx="2" fill="#D7DEEC"/>
+    <rect x="222" y="414" width="49" height="4" rx="2" fill="#D7DEEC"/>
+    <rect x="291" y="414" width="67" height="4" rx="2" fill="#D7DEEC"/>
+    <rect x="506" y="410" width="27" height="13" rx="6.5" fill="#EAF0FF"/>
+  </g>
+
+  <!-- A soft solid asterisk is the centrepiece, like a little digital sculpture. -->
+  <g transform="translate(477 284) rotate(16)">
+    <ellipse cx="9" cy="28" rx="106" ry="89" fill="#1238AD" fill-opacity=".05"/>
+    <g transform="translate(6 11)" mask="url(#flower)">
+      <rect x="-130" y="-130" width="260" height="260" fill="url(#flower-side)"/>
+    </g>
+    <g mask="url(#flower)">
+      <rect x="-130" y="-130" width="260" height="260" fill="url(#flower-face)"/>
+      <path d="M-101 -9C-72 -27-42 -30-9 -26" stroke="white" stroke-opacity=".15" stroke-width="2" stroke-linecap="round"/>
+      <path d="M20 -90C36 -77 45 -59 47 -42" stroke="white" stroke-opacity=".15" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- A compact mobile view echoes the real responsive work. -->
+  <g transform="rotate(10 535 426)" filter="url(#small-shadow)">
+    <rect x="486" y="343" width="104" height="177" rx="22" fill="#17191F"/>
+    <rect x="492" y="349" width="92" height="165" rx="17" fill="white"/>
+    <rect x="515" y="355" width="46" height="9" rx="4.5" fill="#17191F"/>
+    <rect x="503" y="380" width="20" height="5" rx="2.5" fill="#2457F5"/>
+    <rect x="503" y="398" width="67" height="8" rx="3" fill="#17191F"/>
+    <rect x="503" y="411" width="48" height="8" rx="3" fill="#17191F"/>
+    <rect x="503" y="432" width="67" height="42" rx="9" fill="#EAF0FF"/>
+    <path d="M519 461L534 443L551 461" stroke="#2457F5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="556" cy="443" r="4" fill="#DDF3A1"/>
+    <rect x="503" y="485" width="67" height="13" rx="6.5" fill="#2457F5"/>
+    <rect x="526" y="506" width="24" height="3" rx="1.5" fill="#D5DBE8"/>
+  </g>
+
+  <!-- An oversized pointer adds a human trace without a mascot. -->
+  <g transform="translate(249 373) rotate(-8)" filter="url(#small-shadow)">
+    <path d="M5 2L6 95L29 73L46 112L65 103L48 66L80 62L5 2Z" fill="#17191F" stroke="white" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="rotate(12 578 127)" filter="url(#small-shadow)">
+    <rect x="546" y="95" width="64" height="64" rx="19" fill="#DDF3A1"/>
+    <path d="M563 126L574 137L594 116" stroke="#17191F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M173 88V106M164 97H182" stroke="#2457F5" stroke-width="2" stroke-linecap="round"/>
+  <path d="M621 401V413M615 407H627" stroke="#9EB6F8" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="390" cy="520" r="4" fill="#2457F5"/>
+</svg>
