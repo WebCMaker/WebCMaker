@@ -48,7 +48,12 @@
     <path d="M540 145H549M540 149H549M540 153H546" stroke="#8C9CBA" stroke-width="1.5" stroke-linecap="round"/>
 
     <rect x="132" y="197" width="27" height="27" rx="8" fill="#2457F5"/>
-    <path d="M138 205L141 216L145 207L149 216L152 205" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(134 199) scale(.36)">
+      <path d="M25 7L6 26V38L25 57L35 47L20 32L35 17L25 7Z" fill="white"/>
+      <path d="M39 7L58 26V38L39 57L29 47L44 32L29 17L39 7Z" fill="white"/>
+      <path d="M39 7L58 26L44 32L29 17L39 7Z" fill="#94B1FF"/>
+      <path d="M6 38L25 57L35 47L20 32L6 38Z" fill="#94B1FF"/>
+    </g>
     <rect x="174" y="202" width="65" height="5" rx="2.5" fill="#17191F"/>
     <rect x="174" y="213" width="43" height="4" rx="2" fill="#B7C0D2"/>
     <rect x="132" y="249" width="155" height="15" rx="5" fill="#17191F"/>

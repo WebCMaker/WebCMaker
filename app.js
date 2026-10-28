@@ -12,7 +12,9 @@
   const esc = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
   const arrow = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   const star = '<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 5v38M7.5 14.5l33 19M7.5 33.5l33-19" stroke="currentColor" stroke-width="10" stroke-linecap="round"/></svg>';
-  const mark = '<svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="m15 20 7 24 10-18 10 18 7-24" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  const mark = '<img src="brand-mark.svg?v=21" width="40" height="40" alt="" decoding="async">';
+  const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let stopMotion = () => {};
   const words = {
     ru: { skip:'К содержимому', menu:'Открыть меню', nav:'Навигация', independent:'Дизайн. Код. Ваш характер.', work:'Выбранные проекты', view:'Открыть сайт', concept:'Учебный концепт', coffee:'Кофейня', construction:'Строительная компания', approach:'Мой подход', process:'Как работаем', question:'Есть идея?', write:'Давайте обсудим.', more:'Ещё немного деталей', copy:'Скопировать бриф', copied:'Бриф скопирован. Вставьте его в письмо.', copyError:'Не удалось скопировать. Выделите ответы и отправьте их на почту.', deliver:'Готовые файлы — вам.', result:'Дизайн и разработка', scope:'Без домена и публикации', homeTitle:'WebCMaker — дизайн и разработка сайтов', projectsTitle:'Работы — WebCMaker', servicesTitle:'Услуги — WebCMaker', briefTitle:'Обсудить проект — WebCMaker', faqNote:'Остались вопросы? Напишите мне.', from:'От идеи до готового сайта', submitFallback:'Если почтовая программа не открылась, скопируйте бриф и отправьте его на', allWork:'Все работы' },
     en: { skip:'Skip to content', menu:'Open menu', nav:'Navigation', independent:'Design. Code. Your character.', work:'Selected projects', view:'Explore website', concept:'Demo concept', coffee:'Coffee shop', construction:'Construction company', approach:'My approach', process:'How it works', question:'Have an idea?', write:'Let’s talk.', more:'A few more details', copy:'Copy brief', copied:'Brief copied. Paste it into an email.', copyError:'Could not copy. Select your answers and send them by email.', deliver:'The finished files are yours.', result:'Design & development', scope:'Domain and publishing excluded', homeTitle:'WebCMaker — website design & development', projectsTitle:'Work — WebCMaker', servicesTitle:'Services — WebCMaker', briefTitle:'Start a project — WebCMaker', faqNote:'Have another question? Email me.', from:'From an idea to a finished website', submitFallback:'If your email app did not open, copy your brief and send it to', allWork:'All work' },
@@ -53,7 +55,7 @@
     return `<svg viewBox="0 0 44 44" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${paths[index]}</svg>`;
   }
   function home(t) {
-    return `<main id="main"><section class="hero"><div class="container hero-grid"><div class="hero-copy"><div class="eyebrow hero-eyebrow"><span class="mini-star">${star}</span>${esc(t.eyebrow)}</div><h1>${heading(t.title)}</h1><p class="hero-intro">${esc(t.intro)}</p><div class="button-row">${link('#selected-work', `${esc(t.primary)} ${arrow}`, 'button button-blue')}${link('brief.html', `${esc(t.secondary)} ${arrow}`, 'text-link hero-secondary')}</div></div><div class="hero-art"><span class="art-corner">WEB / DESIGN / DEVELOPMENT</span><img src="portfolio-hero.svg" width="720" height="620" alt="" fetchpriority="high"><span class="art-note"><i></i>${ui().independent}</span></div></div><div class="container hero-bottom"><span>${esc(t.ribbon)}</span><a href="#selected-work" class="scroll-cue" aria-label="${ui().work}">↓</a><span>HTML · CSS · JavaScript</span></div></section>
+    return `<main id="main"><section class="hero"><div class="container hero-grid"><div class="hero-copy"><div class="eyebrow hero-eyebrow"><span class="mini-star">${star}</span>${esc(t.eyebrow)}</div><h1>${heading(t.title)}</h1><p class="hero-intro">${esc(t.intro)}</p><div class="button-row">${link('#selected-work', `${esc(t.primary)} ${arrow}`, 'button button-blue')}${link('brief.html', `${esc(t.secondary)} ${arrow}`, 'text-link hero-secondary')}</div></div><div class="hero-art"><span class="art-corner">WEB / DESIGN / DEVELOPMENT</span><img src="portfolio-hero.svg?v=21" width="720" height="620" alt="" fetchpriority="high"><span class="art-note"><i></i>${ui().independent}</span></div></div><div class="container hero-bottom"><span>${esc(t.ribbon)}</span><a href="#selected-work" class="scroll-cue" aria-label="${ui().work}">↓</a><span>HTML · CSS · JavaScript</span></div></section>
       <section class="section section-work" id="selected-work"><div class="container"><div class="section-heading"><div><span class="eyebrow">01 / ${ui().work}</span><h2>${esc(t.projectsTitle)}</h2></div>${link('projects.html', `${ui().allWork} ${arrow}`, 'text-link')}</div>${works()}<p class="section-footnote">${esc(t.projectsIntro)}</p></div></section>
       <section class="section section-services"><div class="container"><div class="section-heading"><div><span class="eyebrow">02 / ${esc(copy[lang].nav.services)}</span><h2>${esc(t.servicesTitle)}</h2></div><p>${esc(t.servicesIntro)}</p></div><div class="service-rows">${t.services.map(([number,title,description,timing],index) => `<a class="service-row" href="services.html#service-${index + 1}"><span class="row-index">${esc(number)}</span><span class="service-row-icon">${serviceIcon(index)}</span><h3>${esc(title)}</h3><p>${esc(description)}</p><span class="service-timing">${esc(timing)}</span><span class="circle-arrow">${arrow}</span></a>`).join('')}</div></div></section>
       <section class="section section-approach"><div class="container approach-grid"><div class="approach-art"><img src="portfolio-process.svg" width="500" height="400" alt="" loading="lazy"><span>${ui().from}</span></div><div class="approach-copy"><span class="eyebrow">03 / ${ui().approach}</span><h2>${esc(t.trustTitle)}</h2><div class="principles">${t.trust.map(([number,title,body]) => `<article class="principle"><span>${esc(number)}</span><div><h3>${esc(title)}</h3><p>${esc(body)}</p></div></article>`).join('')}</div></div></div></section>
@@ -83,6 +85,7 @@
     return { fields: Array.from(form.elements).filter(element => element.name).map(element => [element.name,element.value]), extra: !!form.querySelector('.form-extra')?.open };
   }
   function render(draft = null) {
+    stopMotion();
     const t = copy[lang];
     document.body.classList.remove('menu-open');
     document.documentElement.lang = lang;
@@ -105,6 +108,7 @@
     }
     setupMenu();
     setupBrief();
+    setupMotion();
   }
   function setupMenu() {
     const toggle = document.querySelector('.menu-toggle');
@@ -149,6 +153,76 @@
       }
     });
   }
+  function setupMotion() {
+    stopMotion = () => {};
+    if (motionPreference.matches || typeof document.documentElement.animate !== 'function' || !('IntersectionObserver' in window)) return;
+    const animations = new Set();
+    const revealed = new WeakSet();
+    const cleanups = [];
+    let active = true;
+    const play = (element, frames, options) => {
+      if (!active || !element.isConnected) return null;
+      try {
+        const animation = element.animate(frames, { fill: 'none', ...options });
+        animations.add(animation);
+        animation.onfinish = animation.oncancel = () => animations.delete(animation);
+        return animation;
+      } catch (_) { return null; }
+    };
+    const revealObserver = new IntersectionObserver(entries => {
+      if (!active) return;
+      entries.forEach(entry => {
+        if (!entry.isIntersecting || !entry.target.isConnected || revealed.has(entry.target)) return;
+        revealed.add(entry.target);
+        revealObserver.unobserve(entry.target);
+        const siblings = Array.from(entry.target.parentElement.children);
+        const delay = Math.min(siblings.indexOf(entry.target), 3) * 55;
+        play(entry.target, [
+          { opacity: .3, transform: 'translate3d(0, 20px, 0)' },
+          { opacity: 1, transform: 'translate3d(0, 0, 0)' }
+        ], { duration: 650, delay, fill: 'backwards', easing: 'cubic-bezier(.22,1,.36,1)' });
+      });
+    }, { threshold: .08, rootMargin: '0px 0px -20px 0px' });
+    const targets = document.querySelectorAll('main .section-heading, main .project-card, main .service-row, main .approach-art, main .approach-copy, main .process-step, main .faq-heading, main .faq-item, main .service-card, main .check-list li, main .boundary-card, main .timing-layout, main .brief-aside, main .form-card, .footer-top');
+    targets.forEach(element => {
+      // Prerendered, already-visible content must never flash or become hidden.
+      if (element.getBoundingClientRect().top >= window.innerHeight) revealObserver.observe(element);
+    });
+    cleanups.push(() => revealObserver.disconnect());
+    const artwork = document.querySelector('.hero-art');
+    if (artwork) {
+      const artObserver = new IntersectionObserver(entries => {
+        if (active) entries.forEach(entry => artwork.classList.toggle('motion-active', entry.isIntersecting));
+      }, { threshold: 0 });
+      artObserver.observe(artwork);
+      cleanups.push(() => { artObserver.disconnect(); artwork.classList.remove('motion-active'); });
+    }
+    document.querySelectorAll('.faq-item, .form-extra').forEach(details => {
+      const panel = details.querySelector('.faq-answer') || details.querySelector('div');
+      if (!panel) return;
+      let animation = null;
+      const onToggle = () => {
+        if (animation) animation.cancel();
+        if (!active || !details.open || motionPreference.matches) return;
+        animation = play(panel, [
+          { opacity: .25, transform: 'translateY(-6px)' },
+          { opacity: 1, transform: 'translateY(0)' }
+        ], { duration: 260, easing: 'cubic-bezier(.22,1,.36,1)' });
+      };
+      details.addEventListener('toggle', onToggle);
+      cleanups.push(() => details.removeEventListener('toggle', onToggle));
+    });
+    stopMotion = () => {
+      active = false;
+      cleanups.forEach(cleanup => cleanup());
+      animations.forEach(animation => animation.cancel());
+      animations.clear();
+    };
+  }
+  motionPreference.addEventListener?.('change', () => {
+    stopMotion();
+    if (!motionPreference.matches) setupMotion();
+  });
   const desktopViewport = window.matchMedia('(min-width: 901px)');
   desktopViewport.addEventListener?.('change', event => {
     if (!event.matches) return;
