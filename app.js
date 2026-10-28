@@ -12,7 +12,7 @@
   const esc = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
   const arrow = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   const star = '<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 5v38M7.5 14.5l33 19M7.5 33.5l33-19" stroke="currentColor" stroke-width="10" stroke-linecap="round"/></svg>';
-  const mark = '<img src="brand-mark.svg?v=23" width="40" height="40" alt="" decoding="async">';
+  const mark = '<img src="brand-mark.svg?v=24" width="40" height="40" alt="" decoding="async">';
   const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
   let stopMotion = () => {};
   const words = {
@@ -55,10 +55,10 @@
     return `<svg viewBox="0 0 44 44" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${paths[index]}</svg>`;
   }
   function home(t) {
-    return `<main id="main"><section class="hero"><div class="container hero-grid"><div class="hero-copy"><div class="eyebrow hero-eyebrow"><span class="mini-star">${star}</span>${esc(t.eyebrow)}</div><h1>${heading(t.title)}</h1><p class="hero-intro">${esc(t.intro)}</p><div class="button-row">${link('#selected-work', `${esc(t.primary)} ${arrow}`, 'button button-blue')}${link('brief.html', `${esc(t.secondary)} ${arrow}`, 'text-link hero-secondary')}</div></div><div class="hero-art"><span class="art-corner">WEB / DESIGN / DEVELOPMENT</span><img src="portfolio-hero.svg?v=23" width="720" height="620" alt="" fetchpriority="high"><span class="art-note"><i></i>${ui().independent}</span></div></div><div class="container hero-bottom"><span>${esc(t.ribbon)}</span><a href="#selected-work" class="scroll-cue" aria-label="${ui().work}">↓</a><span>HTML · CSS · JavaScript</span></div></section>
+    return `<main id="main"><section class="hero"><div class="container hero-grid"><div class="hero-copy"><div class="eyebrow hero-eyebrow"><span class="mini-star">${star}</span>${esc(t.eyebrow)}</div><h1>${heading(t.title)}</h1><p class="hero-intro">${esc(t.intro)}</p><div class="button-row">${link('#selected-work', `${esc(t.primary)} ${arrow}`, 'button button-blue')}${link('brief.html', `${esc(t.secondary)} ${arrow}`, 'text-link hero-secondary')}</div></div><div class="hero-art"><span class="art-corner">WEB / DESIGN / DEVELOPMENT</span><img src="portfolio-hero.svg?v=24" width="720" height="620" alt="" fetchpriority="high"><span class="art-note"><i></i>${ui().independent}</span></div></div><div class="container hero-bottom"><span>${esc(t.ribbon)}</span><a href="#selected-work" class="scroll-cue" aria-label="${ui().work}">↓</a><span>HTML · CSS · JavaScript</span></div></section>
       <section class="section section-work" id="selected-work"><div class="container"><div class="section-heading"><div><span class="eyebrow">01 / ${ui().work}</span><h2>${esc(t.projectsTitle)}</h2></div>${link('projects.html', `${ui().allWork} ${arrow}`, 'text-link')}</div>${works()}<p class="section-footnote">${esc(t.projectsIntro)}</p></div></section>
       <section class="section section-services"><div class="container"><div class="section-heading"><div><span class="eyebrow">02 / ${esc(copy[lang].nav.services)}</span><h2>${esc(t.servicesTitle)}</h2></div><p>${esc(t.servicesIntro)}</p></div><div class="service-rows">${t.services.map(([number,title,description,timing],index) => `<a class="service-row" href="services.html#service-${index + 1}"><span class="row-index">${esc(number)}</span><span class="service-row-icon">${serviceIcon(index)}</span><h3>${esc(title)}</h3><p>${esc(description)}</p><span class="service-timing">${esc(timing)}</span><span class="circle-arrow">${arrow}</span></a>`).join('')}</div></div></section>
-      <section class="section section-approach"><div class="container approach-grid"><div class="approach-art"><img src="portfolio-process.svg?v=23" width="500" height="400" alt="" loading="lazy"><span>${ui().from}</span></div><div class="approach-copy"><span class="eyebrow">03 / ${ui().approach}</span><h2>${esc(t.trustTitle)}</h2><div class="principles">${t.trust.map(([number,title,body]) => `<article class="principle"><span>${esc(number)}</span><div><h3>${esc(title)}</h3><p>${esc(body)}</p></div></article>`).join('')}</div></div></div></section>
+      <section class="section section-approach"><div class="container approach-grid"><div class="approach-art"><img src="portfolio-process.svg?v=24" width="500" height="400" alt="" loading="lazy"><span>${ui().from}</span></div><div class="approach-copy"><span class="eyebrow">03 / ${ui().approach}</span><h2>${esc(t.trustTitle)}</h2><div class="principles">${t.trust.map(([number,title,body]) => `<article class="principle"><span>${esc(number)}</span><div><h3>${esc(title)}</h3><p>${esc(body)}</p></div></article>`).join('')}</div></div></div></section>
       <section class="section section-process"><div class="container"><div class="section-heading"><div><span class="eyebrow">04 / ${ui().process}</span><h2>${esc(t.processTitle)}</h2></div><p>${esc(t.processIntro)}</p></div><div class="process-grid">${t.process.map(([number,title,body]) => `<article class="process-step"><span class="process-number">${esc(number)}</span><h3>${esc(title)}</h3><p>${esc(body)}</p></article>`).join('')}</div></div></section>
       <section class="section section-faq"><div class="container faq-layout"><div class="faq-heading"><span class="eyebrow">05 / FAQ</span><h2>${esc(t.faqTitle)}</h2><a class="text-link" href="mailto:${contactEmail}">${ui().faqNote} ${arrow}</a><span class="faq-flower" aria-hidden="true">${star}</span></div><div class="faq-list">${t.faq.map(([question, answer]) => `<details class="faq-item"><summary><span>${esc(question)}</span><span class="faq-plus" aria-hidden="true">+</span></summary><div class="faq-answer"><p>${esc(answer)}</p></div></details>`).join('')}</div></div></section></main>`;
   }
@@ -67,7 +67,7 @@
   }
   function services(t) {
     return `<main id="main">${pageHero(t)}<section class="section service-cards-section"><div class="container service-grid">${t.cards.map(([title,description,features],index) => `<article class="service-card" id="service-${index + 1}"><div class="service-card-top"><span>0${index + 1}</span>${serviceIcon(index)}</div><h2>${esc(title)}</h2><p>${esc(description)}</p><ul>${features.map(feature => `<li>${esc(feature)}</li>`).join('')}</ul>${link('brief.html', `${esc(copy[lang].startProject)} ${arrow}`, 'text-link')}</article>`).join('')}</div></section>
-      <section class="section"><div class="container deliverables-grid"><div><span class="eyebrow">${ui().result}</span><h2>${esc(t.includedTitle)}</h2><img class="deliverables-art" src="portfolio-process.svg?v=23" width="500" height="400" alt="" loading="lazy"></div><ul class="check-list">${t.included.map((item,index) => `<li><span>${String(index + 1).padStart(2, '0')}</span>${esc(item)}<b aria-hidden="true">✓</b></li>`).join('')}</ul></div></section>
+      <section class="section"><div class="container deliverables-grid"><div><span class="eyebrow">${ui().result}</span><h2>${esc(t.includedTitle)}</h2><img class="deliverables-art" src="portfolio-process.svg?v=24" width="500" height="400" alt="" loading="lazy"></div><ul class="check-list">${t.included.map((item,index) => `<li><span>${String(index + 1).padStart(2, '0')}</span>${esc(item)}<b aria-hidden="true">✓</b></li>`).join('')}</ul></div></section>
       <section class="section section-soft"><div class="container boundary-grid"><article class="boundary-card"><span class="eyebrow">${lang === 'en' ? 'Clear scope' : lang === 'uk' ? 'Чесно про можливості' : 'Честно о возможностях'}</span><h2>${esc(t.limitsTitle)}</h2><p>${esc(t.limitsText)}</p></article><article class="boundary-card"><span class="eyebrow">${lang === 'en' ? 'A clear process' : lang === 'uk' ? 'Зрозумілий процес' : 'Понятный процесс'}</span><h2>${esc(t.revisionsTitle)}</h2><p>${esc(t.revisionsText)}</p></article></div></section>
       <section class="section"><div class="container timing-layout"><div><span class="eyebrow">${ui().process}</span><h2>${esc(t.timingTitle)}</h2><p>${esc(t.timingNote)}</p></div><div class="timing-list">${t.timing.map(([name,value]) => `<div class="timing-row"><span>${esc(name)}</span><strong>${esc(value)}</strong></div>`).join('')}</div></div></section></main>`;
   }
@@ -157,6 +157,7 @@
   function setupMotion() {
     stopMotion = () => {};
     if (motionPreference.matches || typeof document.documentElement.animate !== 'function' || !('IntersectionObserver' in window)) return;
+    const compactMotion = window.matchMedia('(max-width: 900px), (pointer: coarse)').matches;
     const animations = new Set();
     const revealed = new WeakSet();
     const cleanups = [];
@@ -176,15 +177,21 @@
         if (!entry.isIntersecting || !entry.target.isConnected || revealed.has(entry.target)) return;
         revealed.add(entry.target);
         revealObserver.unobserve(entry.target);
+        // Begin below the viewport. A queued callback after a fast swipe must
+        // never dim or move content the visitor can already see.
+        if (entry.target.getBoundingClientRect().top < window.innerHeight) return;
         const siblings = Array.from(entry.target.parentElement.children);
-        const delay = Math.min(siblings.indexOf(entry.target), 3) * 55;
+        const delay = compactMotion ? 0 : Math.min(Math.max(siblings.indexOf(entry.target), 0), 2) * 40;
         play(entry.target, [
-          { opacity: .3, transform: 'translate3d(0, 20px, 0)' },
+          { opacity: compactMotion ? .72 : .55, transform: `translate3d(0, ${compactMotion ? 10 : 14}px, 0)` },
           { opacity: 1, transform: 'translate3d(0, 0, 0)' }
-        ], { duration: 650, delay, fill: 'backwards', easing: 'cubic-bezier(.22,1,.36,1)' });
+        ], { duration: compactMotion ? 820 : 720, delay, fill: 'backwards', easing: 'cubic-bezier(.22,.61,.36,1)' });
       });
-    }, { threshold: .08, rootMargin: '0px 0px -20px 0px' });
-    const targets = document.querySelectorAll('main .section-heading, main .project-card, main .service-row, main .approach-art, main .approach-copy, main .process-step, main .faq-heading, main .faq-item, main .service-card, main .check-list li, main .boundary-card, main .timing-layout, main .brief-aside, main .form-card, .footer-top');
+    }, { threshold: 0, rootMargin: '0px 0px 96px 0px' });
+    const targetSelector = compactMotion
+      ? 'main .section-heading, main .project-card, main .service-row, main .approach-art, main .approach-copy, main .process-step, main .faq-heading, main .service-card, main .boundary-card, main .timing-layout, main .brief-aside, main .form-card, .footer-top'
+      : 'main .section-heading, main .project-card, main .service-row, main .approach-art, main .approach-copy, main .process-step, main .faq-heading, main .faq-item, main .service-card, main .check-list li, main .boundary-card, main .timing-layout, main .brief-aside, main .form-card, .footer-top';
+    const targets = document.querySelectorAll(targetSelector);
     targets.forEach(element => {
       // Prerendered, already-visible content must never flash or become hidden.
       if (element.getBoundingClientRect().top >= window.innerHeight) revealObserver.observe(element);
