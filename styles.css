@@ -564,3 +564,23 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 /* FAQ controls: white plus badges and a little more inner spacing */
 .faq-item summary { padding-inline: 6px; }
 .faq-item summary span { background: #fff; }
+
+/* TERRA and FORMA concept cards */
+.project-showcase-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 18px; }
+.project-showcase-grid .project-feature-grid { max-width: none; }
+.project-showcase-grid .project-feature-card .project-visual { min-height: 330px; }
+.project-showcase-grid .project-caption { padding: 18px 20px; }
+.project-showcase-grid .project-caption h3 { font-size: clamp(20px, 2.2vw, 28px); }
+.project-showcase-grid .project-caption p { font-size: 11px; }
+.construction-art { isolation: isolate; background: #767a73; color: #fff; }
+.construction-art::after { position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(15, 20, 18, .56), rgba(15, 20, 18, .03) 82%); content: ''; }
+.construction-art img { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.construction-art-index, .construction-art-bottom { position: absolute; z-index: 2; left: 24px; color: rgba(255, 255, 255, .86); font-size: 7px; font-weight: 800; letter-spacing: .15em; }
+.construction-art-index { top: 23px; }
+.construction-art-bottom { bottom: 22px; }
+.construction-art-name { position: absolute; z-index: 2; bottom: 57px; left: 24px; font: 500 clamp(42px, 7vw, 76px)/.9 'Manrope', sans-serif; letter-spacing: -.08em; }
+@media (max-width: 760px) {
+  .project-showcase-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .project-showcase-grid .project-feature-card .project-visual { min-height: 270px; }
+  .project-showcase-grid .project-caption h3 { font-size: clamp(22px, 6vw, 28px); }
+}

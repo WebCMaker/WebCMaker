@@ -63,6 +63,18 @@
     </a></div>`;
   }
 
+  function constructionProjectCard() {
+    const project = {
+      ru: { category: "Концепт · Строительство", title: "FORMA — строим пространство для жизни", description: "Сайт строительной компании с направлениями работ, этапами и фотопроектами.", link: "Открыть концепт", label: "Открыть концепт FORMA" },
+      en: { category: "Concept · Construction", title: "FORMA — spaces built for life", description: "A construction company site with services, project stages and photo stories.", link: "Open concept", label: "Open the FORMA concept" },
+      uk: { category: "Концепт · Будівництво", title: "FORMA — будуємо простір для життя", description: "Сайт будівельної компанії з напрямами робіт, етапами та фотопроєктами.", link: "Відкрити концепт", label: "Відкрити концепт FORMA" }
+    }[lang];
+    return `<div class="project-grid project-feature-grid"><a class="project-card project-feature-card reveal" href="projects/forma-construction/" aria-label="${esc(project.label)}">
+      <div class="project-visual construction-art" aria-hidden="true"><img src="https://images.unsplash.com/photo-1659427921734-d4590f1e099f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="" width="1200" height="800" loading="lazy"><span class="construction-art-index">CONCEPT / 02</span><span class="construction-art-name">FORMA</span><span class="construction-art-bottom">CONSTRUCTION · KYIV</span></div>
+      <div class="project-caption"><div><span class="eyebrow tiny">${esc(project.category)}</span><h3>${esc(project.title)}</h3><p>${esc(project.description)}</p><span class="project-feature-link">${esc(project.link)} ${arrow}</span></div><span class="project-plus" aria-hidden="true">↗</span></div>
+    </a></div>`;
+  }
+
   function home(t) {
     return `<main id="main">
       <section class="hero section-pad"><div class="container hero-grid">
@@ -71,7 +83,7 @@
       </div><div class="container hero-bottom"><span>${lang === "ru" ? "Дизайн" : lang === "uk" ? "Дизайн" : "Design"}</span><i></i><span>HTML · CSS · JavaScript</span><i></i><span>Figma</span><i></i><span>${lang === "ru" ? "Поддержка" : lang === "uk" ? "Підтримка" : "Support"}</span></div></section>
       <section class="trust-section section-pad"><div class="container"><div class="section-heading reveal"><span class="eyebrow">${lang === "ru" ? "Почему WebCMaker" : lang === "uk" ? "Чому WebCMaker" : "Why WebCMaker"}</span><h2>${esc(t.trustTitle)}</h2></div><div class="trust-grid">${t.trust.map(([num, title, body]) => `<article class="trust-card reveal"><span class="trust-number">${esc(num)}</span><h3>${esc(title)}</h3><p>${esc(body)}</p></article>`).join("")}</div></div></section>
       <section class="section-pad section-muted"><div class="container"><div class="section-heading split-heading reveal"><div><span class="eyebrow">${lang === "ru" ? "Услуги" : lang === "uk" ? "Послуги" : "Services"}</span><h2>${esc(t.servicesTitle)}</h2></div><p>${esc(t.servicesIntro)}</p></div>${serviceCards(t.services)}<p class="fine-print">${esc(t.timingNote)}</p><div class="section-link">${link("services.html", `${esc(copy[lang].serviceLink)} ${arrow}`, "text-link")}</div></div></section>
-      <section class="section-pad"><div class="container"><div class="section-heading split-heading reveal"><div><span class="eyebrow">${lang === "ru" ? "Выбранные работы" : lang === "uk" ? "Вибрані роботи" : "Selected work"}</span><h2>${esc(t.projectsTitle)}</h2></div><p>${esc(t.projectsIntro)}</p></div>${featuredProjectCard(copy[lang].projects.featured)}<div class="section-link">${link("projects.html", `${esc(copy[lang].allProjects)} ${arrow}`, "text-link")}</div></div></section>
+      <section class="section-pad"><div class="container"><div class="section-heading split-heading reveal"><div><span class="eyebrow">${lang === "ru" ? "Выбранные работы" : lang === "uk" ? "Вибрані роботи" : "Selected work"}</span><h2>${esc(t.projectsTitle)}</h2></div><p>${esc(t.projectsIntro)}</p></div><div class="project-showcase-grid">${featuredProjectCard(copy[lang].projects.featured)}${constructionProjectCard()}</div><div class="section-link">${link("projects.html", `${esc(copy[lang].allProjects)} ${arrow}`, "text-link")}</div></div></section>
       <section class="section-pad section-dark"><div class="container"><div class="section-heading split-heading section-heading-light reveal"><div><span class="eyebrow eyebrow-light">${lang === "ru" ? "Процесс" : lang === "uk" ? "Процес" : "Process"}</span><h2>${esc(t.processTitle)}</h2></div><p>${esc(t.processIntro)}</p></div><div class="process-list">${t.process.map(([num, title, body]) => `<article class="process-step reveal"><span class="process-num">${esc(num)}</span><h3>${esc(title)}</h3><p>${esc(body)}</p><span class="process-mark" aria-hidden="true">↗</span></article>`).join("")}</div></div></section>
       <section class="section-pad"><div class="container faq-layout"><div class="section-heading reveal"><span class="eyebrow">FAQ</span><h2>${esc(t.faqTitle)}</h2><p>${lang === "ru" ? "Оставьте вопрос в брифе — вернусь с ответом." : lang === "uk" ? "Залиште запитання у брифі — відповім." : "Leave a question in the brief and I will get back to you."}</p></div><div class="faq-list">${t.faq.map(([q, a]) => `<details class="faq-item reveal"><summary>${esc(q)}<span aria-hidden="true">+</span></summary><p>${esc(a)}</p></details>`).join("")}</div></div></section>
       <section class="cta-band"><div class="container cta-inner reveal"><div><span class="eyebrow eyebrow-light">${lang === "ru" ? "Следующий шаг" : lang === "uk" ? "Наступний крок" : "Next step"}</span><h2>${esc(t.finalTitle)}</h2><p>${esc(t.finalText)}</p></div>${link("brief.html", `${esc(t.finalButton)} ${arrow}`, "button button-lime")}</div></section>
@@ -90,7 +102,7 @@
 
   function projects(t) {
     return `<main id="main"><section class="page-hero section-pad"><div class="container page-hero-inner reveal"><span class="eyebrow"><i class="eyebrow-dot"></i>${esc(t.eyebrow)}</span><h1>${esc(t.title)}</h1><p>${esc(t.intro)}</p></div></section>
-      <section class="section-pad section-muted"><div class="container">${featuredProjectCard(t.featured)}</div></section>
+      <section class="section-pad section-muted"><div class="container project-showcase-grid">${featuredProjectCard(t.featured)}${constructionProjectCard()}</div></section>
       <section class="section-pad"><div class="container portfolio-note reveal"><div class="portfolio-note-icon" aria-hidden="true">✳</div><div><h2>${esc(t.noteTitle)}</h2><p>${esc(t.noteText)}</p></div>${link("brief.html", `${esc(copy[lang].startProject)} ${arrow}`, "button button-dark")}</div></section></main>`;
   }
 
