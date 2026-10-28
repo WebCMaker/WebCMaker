@@ -294,13 +294,19 @@ window.WEBIT_COPY = {
       "extra": "Другие пожелания",
       "extraPlaceholder": "Домен, хостинг и другие пожелания",
       "submit": "Отправить бриф",
-      "formNote": "Бриф отправится на мою почту через FormSubmit. Далее может появиться проверка от спама.",
+      "formNote": "Бриф отправится на мою почту через FormSubmit.",
       "directTitle": "Можно просто написать.",
       "directText": "Если удобнее начать с письма — я на связи.",
       "required": "Обязательное поле",
       "emailSubject": "Бриф на сайт — WebCMaker",
       "mailOpened": "Переходим к проверке и отправке…",
-      "copyFallback": "Скопируйте ответы вручную и пришлите их на почту."
+      "copyFallback": "Скопируйте ответы вручную и пришлите их на почту.",
+      "sending": "Отправляем бриф…",
+      "sent": "Бриф принят. Спасибо! Я свяжусь с вами по указанному контакту.",
+      "sendError": "Не удалось подтвердить отправку. Ответы сохранены — попробуйте ещё раз или напишите на почту.",
+      "sendTimeout": "Сервис отвечает слишком долго. Ответы сохранены — проверьте отправку перед повтором.",
+      "activationError": "Форма ещё не активирована. Напишите мне напрямую на почту.",
+      "validationError": "Заполните обязательные поля."
     }
   },
   "en": {
@@ -597,13 +603,19 @@ window.WEBIT_COPY = {
       "extra": "Anything else?",
       "extraPlaceholder": "Domain, hosting and any other preferences",
       "submit": "Send brief",
-      "formNote": "Your brief is sent to my email via FormSubmit. A spam check may appear next.",
+      "formNote": "Your brief is sent to my email via FormSubmit.",
       "directTitle": "An email works too.",
       "directText": "Prefer to start with a message? Get in touch.",
       "required": "Required",
       "emailSubject": "Website brief — WebCMaker",
       "mailOpened": "Opening verification and submission…",
-      "copyFallback": "Copy your answers manually and send them by email."
+      "copyFallback": "Copy your answers manually and send them by email.",
+      "sending": "Sending your brief…",
+      "sent": "Your brief has been accepted. Thank you! I’ll contact you using the details you provided.",
+      "sendError": "Could not confirm submission. Your answers are saved — try again or email me directly.",
+      "sendTimeout": "The service is taking too long to respond. Your answers are saved — check the submission before trying again.",
+      "activationError": "This form is not activated yet. Please email me directly.",
+      "validationError": "Please complete the required fields."
     }
   },
   "uk": {
@@ -900,13 +912,19 @@ window.WEBIT_COPY = {
       "extra": "Інші побажання",
       "extraPlaceholder": "Домен, хостинг та інші побажання",
       "submit": "Надіслати бриф",
-      "formNote": "Бриф надійде на мою пошту через FormSubmit. Далі може з’явитися перевірка від спаму.",
+      "formNote": "Бриф надійде на мою пошту через FormSubmit.",
       "directTitle": "Можна просто написати.",
       "directText": "Якщо зручніше почати з листа — я на зв’язку.",
       "required": "Обов’язкове поле",
       "emailSubject": "Бриф на сайт — WebCMaker",
       "mailOpened": "Переходимо до перевірки та надсилання…",
-      "copyFallback": "Скопіюйте відповіді вручну й надішліть їх на пошту."
+      "copyFallback": "Скопіюйте відповіді вручну й надішліть їх на пошту.",
+      "sending": "Надсилаємо бриф…",
+      "sent": "Бриф прийнято. Дякую! Я зв’яжуся з вами за вказаним контактом.",
+      "sendError": "Не вдалося підтвердити надсилання. Відповіді збережено — спробуйте ще раз або напишіть на пошту.",
+      "sendTimeout": "Сервіс відповідає надто довго. Відповіді збережено — перевірте надсилання перед повтором.",
+      "activationError": "Форму ще не активовано. Напишіть мені безпосередньо на пошту.",
+      "validationError": "Заповніть обов’язкові поля."
     }
   }
 };
