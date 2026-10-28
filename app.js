@@ -5,6 +5,7 @@
   const supported = ['ru', 'en', 'uk'];
   const page = ['home', 'projects', 'services', 'brief'].includes(document.body.dataset.page) ? document.body.dataset.page : 'home';
   const contactEmail = 'webcmaker@gmail.com';
+  const formEndpoint = 'https://formspree.io/f/xyeejarz';
   const storageKey = 'webcmaker-language';
   let saved = '';
   try { saved = localStorage.getItem(storageKey) || ''; } catch (_) {}
@@ -12,7 +13,7 @@
   const esc = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
   const arrow = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   const star = '<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 5v38M7.5 14.5l33 19M7.5 33.5l33-19" stroke="currentColor" stroke-width="10" stroke-linecap="round"/></svg>';
-  const mark = '<img src="brand-mark.svg?v=25" width="40" height="40" alt="" decoding="async">';
+  const mark = '<img src="brand-mark.svg?v=26" width="40" height="40" alt="" decoding="async">';
   const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
   let stopMotion = () => {};
   let stopBrief = () => {};
@@ -56,10 +57,10 @@
     return `<svg viewBox="0 0 44 44" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${paths[index]}</svg>`;
   }
   function home(t) {
-    return `<main id="main"><section class="hero"><div class="container hero-grid"><div class="hero-copy"><div class="eyebrow hero-eyebrow"><span class="mini-star">${star}</span>${esc(t.eyebrow)}</div><h1>${heading(t.title)}</h1><p class="hero-intro">${esc(t.intro)}</p><div class="button-row">${link('#selected-work', `${esc(t.primary)} ${arrow}`, 'button button-blue')}${link('brief.html', `${esc(t.secondary)} ${arrow}`, 'text-link hero-secondary')}</div></div><div class="hero-art"><span class="art-corner">WEB / DESIGN / DEVELOPMENT</span><img src="portfolio-hero.svg?v=25" width="720" height="620" alt="" fetchpriority="high"><span class="art-note"><i></i>${ui().independent}</span></div></div><div class="container hero-bottom"><span>${esc(t.ribbon)}</span><a href="#selected-work" class="scroll-cue" aria-label="${ui().work}">↓</a><span>HTML · CSS · JavaScript</span></div></section>
+    return `<main id="main"><section class="hero"><div class="container hero-grid"><div class="hero-copy"><div class="eyebrow hero-eyebrow"><span class="mini-star">${star}</span>${esc(t.eyebrow)}</div><h1>${heading(t.title)}</h1><p class="hero-intro">${esc(t.intro)}</p><div class="button-row">${link('#selected-work', `${esc(t.primary)} ${arrow}`, 'button button-blue')}${link('brief.html', `${esc(t.secondary)} ${arrow}`, 'text-link hero-secondary')}</div></div><div class="hero-art"><span class="art-corner">WEB / DESIGN / DEVELOPMENT</span><img src="portfolio-hero.svg?v=26" width="720" height="620" alt="" fetchpriority="high"><span class="art-note"><i></i>${ui().independent}</span></div></div><div class="container hero-bottom"><span>${esc(t.ribbon)}</span><a href="#selected-work" class="scroll-cue" aria-label="${ui().work}">↓</a><span>HTML · CSS · JavaScript</span></div></section>
       <section class="section section-work" id="selected-work"><div class="container"><div class="section-heading"><div><span class="eyebrow">01 / ${ui().work}</span><h2>${esc(t.projectsTitle)}</h2></div>${link('projects.html', `${ui().allWork} ${arrow}`, 'text-link')}</div>${works()}<p class="section-footnote">${esc(t.projectsIntro)}</p></div></section>
       <section class="section section-services"><div class="container"><div class="section-heading"><div><span class="eyebrow">02 / ${esc(copy[lang].nav.services)}</span><h2>${esc(t.servicesTitle)}</h2></div><p>${esc(t.servicesIntro)}</p></div><div class="service-rows">${t.services.map(([number,title,description,timing],index) => `<a class="service-row" href="services.html#service-${index + 1}"><span class="row-index">${esc(number)}</span><span class="service-row-icon">${serviceIcon(index)}</span><h3>${esc(title)}</h3><p>${esc(description)}</p><span class="service-timing">${esc(timing)}</span><span class="circle-arrow">${arrow}</span></a>`).join('')}</div></div></section>
-      <section class="section section-approach"><div class="container approach-grid"><div class="approach-art"><img src="portfolio-process.svg?v=25" width="500" height="400" alt="" loading="lazy"><span>${ui().from}</span></div><div class="approach-copy"><span class="eyebrow">03 / ${ui().approach}</span><h2>${esc(t.trustTitle)}</h2><div class="principles">${t.trust.map(([number,title,body]) => `<article class="principle"><span>${esc(number)}</span><div><h3>${esc(title)}</h3><p>${esc(body)}</p></div></article>`).join('')}</div></div></div></section>
+      <section class="section section-approach"><div class="container approach-grid"><div class="approach-art"><img src="portfolio-process.svg?v=26" width="500" height="400" alt="" loading="lazy"><span>${ui().from}</span></div><div class="approach-copy"><span class="eyebrow">03 / ${ui().approach}</span><h2>${esc(t.trustTitle)}</h2><div class="principles">${t.trust.map(([number,title,body]) => `<article class="principle"><span>${esc(number)}</span><div><h3>${esc(title)}</h3><p>${esc(body)}</p></div></article>`).join('')}</div></div></div></section>
       <section class="section section-process"><div class="container"><div class="section-heading"><div><span class="eyebrow">04 / ${ui().process}</span><h2>${esc(t.processTitle)}</h2></div><p>${esc(t.processIntro)}</p></div><div class="process-grid">${t.process.map(([number,title,body]) => `<article class="process-step"><span class="process-number">${esc(number)}</span><h3>${esc(title)}</h3><p>${esc(body)}</p></article>`).join('')}</div></div></section>
       <section class="section section-faq"><div class="container faq-layout"><div class="faq-heading"><span class="eyebrow">05 / FAQ</span><h2>${esc(t.faqTitle)}</h2><a class="text-link" href="mailto:${contactEmail}">${ui().faqNote} ${arrow}</a><span class="faq-flower" aria-hidden="true">${star}</span></div><div class="faq-list">${t.faq.map(([question, answer]) => `<details class="faq-item"><summary><span>${esc(question)}</span><span class="faq-plus" aria-hidden="true">+</span></summary><div class="faq-answer"><p>${esc(answer)}</p></div></details>`).join('')}</div></div></section></main>`;
   }
@@ -68,7 +69,7 @@
   }
   function services(t) {
     return `<main id="main">${pageHero(t)}<section class="section service-cards-section"><div class="container service-grid">${t.cards.map(([title,description,features],index) => `<article class="service-card" id="service-${index + 1}"><div class="service-card-top"><span>0${index + 1}</span>${serviceIcon(index)}</div><h2>${esc(title)}</h2><p>${esc(description)}</p><ul>${features.map(feature => `<li>${esc(feature)}</li>`).join('')}</ul>${link('brief.html', `${esc(copy[lang].startProject)} ${arrow}`, 'text-link')}</article>`).join('')}</div></section>
-      <section class="section"><div class="container deliverables-grid"><div><span class="eyebrow">${ui().result}</span><h2>${esc(t.includedTitle)}</h2><img class="deliverables-art" src="portfolio-process.svg?v=25" width="500" height="400" alt="" loading="lazy"></div><ul class="check-list">${t.included.map((item,index) => `<li><span>${String(index + 1).padStart(2, '0')}</span>${esc(item)}<b aria-hidden="true">✓</b></li>`).join('')}</ul></div></section>
+      <section class="section"><div class="container deliverables-grid"><div><span class="eyebrow">${ui().result}</span><h2>${esc(t.includedTitle)}</h2><img class="deliverables-art" src="portfolio-process.svg?v=26" width="500" height="400" alt="" loading="lazy"></div><ul class="check-list">${t.included.map((item,index) => `<li><span>${String(index + 1).padStart(2, '0')}</span>${esc(item)}<b aria-hidden="true">✓</b></li>`).join('')}</ul></div></section>
       <section class="section section-soft"><div class="container boundary-grid"><article class="boundary-card"><span class="eyebrow">${lang === 'en' ? 'Clear scope' : lang === 'uk' ? 'Чесно про можливості' : 'Честно о возможностях'}</span><h2>${esc(t.limitsTitle)}</h2><p>${esc(t.limitsText)}</p></article><article class="boundary-card"><span class="eyebrow">${lang === 'en' ? 'A clear process' : lang === 'uk' ? 'Зрозумілий процес' : 'Понятный процесс'}</span><h2>${esc(t.revisionsTitle)}</h2><p>${esc(t.revisionsText)}</p></article></div></section>
       <section class="section"><div class="container timing-layout"><div><span class="eyebrow">${ui().process}</span><h2>${esc(t.timingTitle)}</h2><p>${esc(t.timingNote)}</p></div><div class="timing-list">${t.timing.map(([name,value]) => `<div class="timing-row"><span>${esc(name)}</span><strong>${esc(value)}</strong></div>`).join('')}</div></div></section></main>`;
   }
@@ -78,12 +79,12 @@
   function brief(t) {
     const field = (name,label,placeholder,required = false) => `<label class="form-field"><span>${esc(label)}${required ? ' <b>*</b>' : ''}</span><input name="${name}" type="text" placeholder="${esc(placeholder)}" ${required ? 'required' : ''} ${name === 'name' ? 'autocomplete="name" maxlength="120"' : name === 'reply' ? 'autocomplete="email" maxlength="200"' : 'maxlength="500"'}></label>`;
     const area = (name,label,placeholder,required = false) => `<label class="form-field"><span>${esc(label)}${required ? ' <b>*</b>' : ''}</span><textarea name="${name}" placeholder="${esc(placeholder)}" rows="3" maxlength="4000" ${required ? 'required' : ''}></textarea></label>`;
-    return `<main id="main">${pageHero(t)}<section class="section brief-section"><div class="container brief-layout"><aside class="brief-aside"><span class="contact-symbol" aria-hidden="true">${star}</span><h2>${esc(t.directTitle)}</h2><p>${esc(t.directText)}</p><a class="brief-email" href="mailto:${contactEmail}">${contactEmail}${arrow}</a><div class="handoff-note"><span>↗</span><div><strong>${ui().deliver}</strong><p>${ui().scope}</p></div></div></aside><div class="form-card"><div class="form-card-heading"><h2>${esc(t.formTitle)}</h2><span>* ${esc(t.required)}</span></div><form id="brief-form" action="https://formsubmit.co/${contactEmail}" method="post"><input type="hidden" name="_subject" value="${esc(t.emailSubject)}"><input type="hidden" name="_template" value="table"><input type="hidden" name="_url" value="https://webcmaker.github.io/WebCMaker/brief.html"><input type="hidden" name="_next" value="https://webcmaker.github.io/WebCMaker/brief.html?sent=1#form-status"><div class="form-row">${field('name',t.name,t.namePlaceholder,true)}${field('reply',t.contact,t.contactPlaceholder,true)}</div><div class="form-row"><label class="form-field"><span>${esc(t.type)}</span><select name="type">${t.typeOptions.map((option,index) => `<option value="${['','landing','business','redesign','unsure','store'][index]}"${index === 0 ? ' selected disabled' : ''}>${esc(option)}</option>`).join('')}</select></label>${field('budget',t.budget,t.budgetPlaceholder)}</div>${area('business',t.business,t.businessPlaceholder,true)}${area('goal',t.goal,t.goalPlaceholder,true)}<details class="form-extra"><summary>${ui().more}<span>+</span></summary><div>${area('audience',t.audience,t.audiencePlaceholder)}${area('pages',t.pages,t.pagesPlaceholder)}${area('functions',t.functions,t.functionsPlaceholder)}${area('materials',t.materials,t.materialsPlaceholder)}${area('style',t.style,t.stylePlaceholder)}${field('timing',t.timing,t.timingPlaceholder)}${area('extra',t.extra,t.extraPlaceholder)}</div></details><div class="form-actions"><button class="button button-blue" type="submit">${esc(t.submit)} ${arrow}</button><button class="copy-brief text-link" type="button">${ui().copy}</button></div><p class="form-note">${esc(t.formNote)} <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener noreferrer">${ui().privacy} ↗</a></p><p class="form-status" id="form-status" role="status" aria-live="polite"></p><div class="mail-fallback" id="mail-fallback" hidden>${ui().submitFallback} <a href="mailto:${contactEmail}">${contactEmail}</a>.</div></form></div></div></section></main>`;
+    return `<main id="main">${pageHero(t)}<section class="section brief-section"><div class="container brief-layout"><aside class="brief-aside"><span class="contact-symbol" aria-hidden="true">${star}</span><h2>${esc(t.directTitle)}</h2><p>${esc(t.directText)}</p><a class="brief-email" href="mailto:${contactEmail}">${contactEmail}${arrow}</a><div class="handoff-note"><span>↗</span><div><strong>${ui().deliver}</strong><p>${ui().scope}</p></div></div></aside><div class="form-card"><div class="form-card-heading"><h2>${esc(t.formTitle)}</h2><span>* ${esc(t.required)}</span></div><form id="brief-form" action="${formEndpoint}" method="post"><input type="hidden" name="subject" value="${esc(t.emailSubject)}"><div class="form-row">${field('name',t.name,t.namePlaceholder,true)}${field('reply',t.contact,t.contactPlaceholder,true)}</div><div class="form-row"><label class="form-field"><span>${esc(t.type)}</span><select name="type">${t.typeOptions.map((option,index) => `<option value="${['','landing','business','redesign','unsure','store'][index]}"${index === 0 ? ' selected disabled' : ''}>${esc(option)}</option>`).join('')}</select></label>${field('budget',t.budget,t.budgetPlaceholder)}</div>${area('business',t.business,t.businessPlaceholder,true)}${area('goal',t.goal,t.goalPlaceholder,true)}<details class="form-extra"><summary>${ui().more}<span>+</span></summary><div>${area('audience',t.audience,t.audiencePlaceholder)}${area('pages',t.pages,t.pagesPlaceholder)}${area('functions',t.functions,t.functionsPlaceholder)}${area('materials',t.materials,t.materialsPlaceholder)}${area('style',t.style,t.stylePlaceholder)}${field('timing',t.timing,t.timingPlaceholder)}${area('extra',t.extra,t.extraPlaceholder)}</div></details><div class="form-actions"><button class="button button-blue" type="submit">${esc(t.submit)} ${arrow}</button><button class="copy-brief text-link" type="button">${ui().copy}</button></div><p class="form-note">${esc(t.formNote)} <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">${ui().privacy} ↗</a></p><p class="form-status" id="form-status" role="status" aria-live="polite"></p><div class="mail-fallback" id="mail-fallback" hidden>${ui().submitFallback} <a href="mailto:${contactEmail}">${contactEmail}</a>.</div></form></div></div></section></main>`;
   }
   function captureDraft() {
     const form = document.getElementById('brief-form');
     if (!form) return null;
-    return { fields: Array.from(form.elements).filter(element => element.name && !element.name.startsWith('_')).map(element => [element.name,element.value]), extra: !!form.querySelector('.form-extra')?.open };
+    return { fields: Array.from(form.elements).filter(element => element.name && !element.name.startsWith('_') && element.closest('label')).map(element => [element.name,element.value]), extra: !!form.querySelector('.form-extra')?.open };
   }
   function render(draft = null, reuseMarkup = false) {
     stopBrief();
@@ -152,13 +153,7 @@
       clearTimeout(timeout);
       controller?.abort();
     };
-    // Native POST remains available without fetch/JavaScript. The return URL
-    // confirms provider acceptance, never guaranteed delivery to the inbox.
-    try {
-      if (new URLSearchParams(window.location.search).get('sent') === '1') {
-        setStatus(copy[lang].brief.sent, 'is-success');
-      }
-    } catch (_) {}
+    // Without fetch/JavaScript the form still uses the same native POST endpoint.
     form.addEventListener('submit', async event => {
       if (typeof window.fetch !== 'function' || typeof AbortController !== 'function') {
         status.textContent = copy[lang].brief.mailOpened;
@@ -174,7 +169,7 @@
       const labels = copy[lang].brief;
       const originalButton = button?.innerHTML;
       const payload = Object.fromEntries(answers().map(element => [element.name, answerValue(element)]));
-      Object.assign(payload, { _subject: labels.emailSubject, _template: 'table', _url: 'https://webcmaker.github.io/WebCMaker/brief.html' });
+      payload.subject = labels.emailSubject;
       if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.reply || '')) payload.email = payload.reply;
       controller = new AbortController();
       let timedOut = false;
@@ -184,22 +179,22 @@
       fallback.hidden = true;
       setStatus(labels.sending);
       try {
-        const response = await window.fetch(`https://formsubmit.co/ajax/${contactEmail}`, {
+        const response = await window.fetch(formEndpoint, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify(payload),
           signal: controller.signal
         });
-        const result = await response.json();
         if (!active) return;
-        const activation = /activat|confirm.*email|email.*confirm/i.test(String(result?.message || ''));
-        if (activation) {
-          setStatus(labels.activationError, 'is-error');
-          fallback.hidden = false;
-        } else if (response.ok && (result?.success === true || result?.success === 'true')) {
+        // Formspree documents a successful HTTP status as acceptance. A JSON
+        // `ok` or `success` field is not required, including empty 204 responses.
+        if (response.ok) {
           setStatus(labels.sent, 'is-success');
         } else {
-          setStatus(labels.sendError, 'is-error');
+          const errorData = await response.json().catch(() => null);
+          if (!active) return;
+          const setupError = Array.isArray(errorData?.errors) && errorData.errors.some(error => /verify.*email|confirm.*email|not.*activat|form.*not.*found/i.test(String(error?.message || '')));
+          setStatus(setupError ? labels.activationError : labels.sendError, 'is-error');
           fallback.hidden = false;
         }
       } catch (_) {
