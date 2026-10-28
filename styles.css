@@ -40,7 +40,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 82px; }
 .brand { display: inline-flex; align-items: center; gap: 11px; flex: 0 0 auto; }
 .brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid rgba(23, 45, 61, .12); border-radius: 13px; background: var(--dark); color: var(--lime); font-family: 'Manrope', sans-serif; font-size: 21px; font-weight: 800; letter-spacing: -2px; }
-.brand-mark span { transform: translateY(-1px); }
+.brand-mark span { transform: translate(1.5px, -1px); }
 .brand-name { display: flex; flex-direction: column; font-family: 'Manrope', sans-serif; font-size: 20px; font-weight: 800; letter-spacing: -.8px; line-height: 1.05; }
 .brand-name > span { display: inline; }
 .brand-name > span { color: #6e9c26; }
