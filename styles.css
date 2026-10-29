@@ -1798,9 +1798,9 @@ body {isolation:isolate}
 }
 .ambient-field>svg {
   position:absolute;
-  inset:-6%;
-  width:112%;
-  height:112%;
+  inset:0;
+  width:100%;
+  height:100%;
   max-width:none;
 }
 .ambient-field::after {
@@ -1809,17 +1809,17 @@ body {isolation:isolate}
   inset:0;
   background:radial-gradient(ellipse at 80% 40%,#8ab69a12,transparent 56%);
 }
-.field-routes {transform-origin:65% 50%;animation:field-sway 22s ease-in-out infinite alternate}
+.field-routes {animation:field-rise 18s ease-in-out infinite alternate}
 .field-current {animation:field-current 14s linear infinite}
-.field-markers {animation:field-breathe 6s ease-in-out infinite alternate}
-@keyframes field-sway {
-  from {transform:translate(-20px,-16px) rotate(-1deg)}
-  to {transform:translate(24px,20px) rotate(1deg)}
+.field-markers {animation:field-marker-rise 10s ease-in-out infinite alternate}
+@keyframes field-rise {
+  from {transform:translateY(52px)}
+  to {transform:translateY(-52px)}
 }
 @keyframes field-current {to {stroke-dashoffset:-160}}
-@keyframes field-breathe {
-  from {opacity:.2;transform:translateY(0)}
-  to {opacity:.7;transform:translateY(-15px)}
+@keyframes field-marker-rise {
+  from {opacity:.25;transform:translateY(74px)}
+  to {opacity:.72;transform:translateY(-74px)}
 }
 .ambient-paused .ambient-field * {animation-play-state:paused!important}
 .hero,.page-hero,.site-footer {
@@ -1829,10 +1829,6 @@ body {isolation:isolate}
 .section-work,.section-process,.brief-section {
   background-image:radial-gradient(ellipse at 100% 0%,#dce9dd80,transparent 52%);
 }
-@media(max-width:640px) {
-  .ambient-field>svg {left:-57%;right:auto;width:170%;height:112%}
-}
-
 @media(min-width:1600px) {
   .hero {
     padding-top:90px
