@@ -34,7 +34,7 @@ html {
 
 body {
   margin:0;
-  min-width:320px
+  min-width:0
 }
 
 body.menu-open {
@@ -519,148 +519,48 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
   position:relative;
   aspect-ratio:1.28;
   overflow:hidden;
-  padding:48px 35px 49px;
+  padding:46px 28px 43px;
   border-radius:25px;
-  background:#eee5d9;
-  transition:background .3s
+  background:#e6e0d3;
 }
-
-.project-construction .project-cover {
-  background:#e6eaf0
-}
-
+.project-construction .project-cover { background:#dddeda; }
 .project-browser {
-  width:100%;
-  height:100%;
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-  border:1px solid rgba(255,255,255,.7);
-  border-radius:11px;
-  background:white;
-  box-shadow:0 18px 34px #36312d1c;
-  transform:rotate(-3deg);
-  transition:transform .4s
+  width:100%;height:100%;overflow:hidden;
+  display:flex;flex-direction:column;
+  border:1px solid #302c2224;border-radius:3px;
+  background:#f2eee4;
+  box-shadow:0 16px 30px #24292216;
+  transition:transform .4s;
 }
-
-.project-construction .project-browser {
-  transform:rotate(3deg)
-}
-
-.project-card:hover .project-browser {
-  transform:rotate(0) translateY(-3px)
-}
-
+.project-construction .project-browser { background:#f2f0e8; }
+.project-card:hover .project-browser { transform:translateY(-3px); }
 .project-toolbar {
-  height:28px;
-  flex:0 0 28px;
-  padding:0 11px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  background:#fafaf9;
-  font-size:7px;
-  color:#898b92;
-  letter-spacing:.015em
+  height:29px;flex:0 0 29px;padding:0 12px;
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:6px;font-weight:600;letter-spacing:.12em;color:#3e4139;
 }
-
-.window-dots {
-  display:flex;
-  gap:3px
-}
-
-.window-dots i {
-  display:block;
-  width:4px;
-  height:4px;
-  border-radius:50%;
-  background:#d3d5da
-}
-
-.project-toolbar>span:last-child {
-  font-size:12px
-}
-
-.project-image {
-  position:relative;
-  flex:1;
-  min-height:0;
-  overflow:hidden
-}
-
-.project-image>img {
-  position:absolute;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:transform .5s
-}
-
-.project-card:hover .project-image>img {
-  transform:scale(1.045)
-}
-
-.project-coffee .project-image>img {
-  object-position:50% 50%
-}
-
-.project-image::after {
-  position:absolute;
-  inset:0;
-  content:'';
-  background:linear-gradient(180deg,#15100b00,#15100b55)
-}
-
-.project-construction .project-image::after {
-  background:linear-gradient(180deg,#13191b00,#13191b77)
-}
-
+.project-toolbar>span:last-child { font-size:12px; }
 .project-preview-copy {
-  position:absolute;
-  z-index:1;
-  inset:0;
-  padding:23px 26px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  color:white
+  flex:0 0 auto;position:relative;padding:0 12px 5px;
+  color:#403b30;line-height:.86;
 }
-
 .project-preview-copy strong {
-  font-family:Georgia,serif;
-  font-size:clamp(48px,5.1vw,80px);
-  font-weight:400;
-  letter-spacing:-.05em;
-  line-height:1.12
+  display:block;font-family:Manrope,Arial,sans-serif;
+  font-size:clamp(48px,7.4vw,110px);font-weight:500;
+  letter-spacing:-.075em;line-height:.86;
 }
-
-.project-construction .project-preview-copy strong {
-  font-family:Manrope,Arial,sans-serif;
-  font-weight:500;
-  letter-spacing:-.085em
-}
-
-.project-preview-copy>span:first-child {
-  font-family:Georgia,serif;
-  font-style:italic;
-  font-size:11px;
-  margin-bottom:7px
-}
-
-.project-construction .project-preview-copy>span:first-child {
-  font-family:Manrope,Arial,sans-serif;
-  font-size:9px;
-  font-style:normal;
-  text-transform:uppercase;
-  letter-spacing:.06em
-}
-
-.project-preview-copy>span:last-child {
-  margin-top:14px;
-  font-size:6px;
-  letter-spacing:.12em;
-  font-weight:700
-}
+.project-construction .project-preview-copy { color:#232722; }
+.project-construction .project-preview-copy strong { font-weight:550;letter-spacing:-.08em; }
+.project-image { position:relative;flex:1;min-height:0;overflow:hidden;margin:9px 12px 12px; }
+.project-image>img { position:absolute;width:100%;height:100%;object-fit:cover;transition:transform .5s; }
+.project-card:hover .project-image>img { transform:scale(1.035); }
+.project-coffee .project-image>img { object-position:50% 52%; }
+.project-construction .project-image>img { object-position:50% 58%; }
+.project-coffee .project-browser { position:relative;background:#f1ede4; }
+.project-coffee .project-preview-copy { position:absolute;z-index:1;top:42px;left:0;right:0;color:#f8f3e9; }
+.project-coffee .project-preview-copy strong { text-shadow:0 2px 14px #29231f20; }
+.project-coffee .project-image { margin:0; }
+.project-coffee .project-image::after { content:'';position:absolute;inset:0;background:linear-gradient(#29231f30,transparent 65%); }
 
 .concept-badge {
   position:absolute;
@@ -1952,10 +1852,10 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
     border-radius:21px
   }
   .project-preview-copy {
-    padding:18px
+    padding:0 12px 5px
   }
   .project-preview-copy strong {
-    font-size:52px
+    font-size:clamp(48px,7.8vw,90px)
   }
   .project-caption h3 {
     font-size:21px
@@ -2298,8 +2198,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
     gap:34px
   }
   .project-cover {
-    aspect-ratio:1.28;
-    padding:40px 27px 42px;
+    aspect-ratio:1.1;
+    padding:32px 20px 28px;
     border-radius:20px
   }
   .project-toolbar {
@@ -2313,11 +2213,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
     height:3px
   }
   .project-preview-copy strong {
-    font-size:clamp(48px,14vw,76px)
+    font-size:clamp(48px,20vw,110px)
   }
-  .project-preview-copy {
-    padding:17px 20px
-  }
+  .project-preview-copy { padding:0 10px 5px; }
   .project-preview-copy>span:first-child {
     font-size:9px
   }
@@ -3100,6 +2998,6 @@ h1,h2,h3 {
   .button:hover,.project-card:hover .project-image>img {
     transform:none
   }
-  .project-card:hover .project-browser { transform:rotate(-3deg); }
-  .project-construction:hover .project-browser { transform:rotate(3deg); }
+  .project-card:hover .project-browser { transform:none; }
+
 }

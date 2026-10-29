@@ -21,7 +21,12 @@
     });
     nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
   }
-  document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menuToggle?.getAttribute('aria-expanded') === 'true') {
+      closeMenu();
+      menuToggle.focus({preventScroll: true});
+    }
+  });
 
   const directionNames = {house: 'Строительство дома', reconstruction: 'Реконструкция', finishing: 'Внутренняя отделка'};
   const finishNames = {prepared: 'Подготовка под отделку', finished: 'Чистовая отделка', complete: 'Комплексный проект'};

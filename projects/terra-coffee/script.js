@@ -1,6 +1,38 @@
 (() => {
   'use strict';
 
+  const header = document.querySelector('.site-header');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const siteNav = document.getElementById('site-nav');
+  if (header && menuToggle && siteNav) {
+    const mobile = window.matchMedia('(max-width: 620px)');
+    const closeMenu = (restoreFocus = false) => {
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Открыть меню');
+      siteNav.classList.remove('open');
+      if (restoreFocus) menuToggle.focus({ preventScroll: true });
+    };
+    menuToggle.hidden = false;
+    header.classList.add('menu-ready');
+    menuToggle.addEventListener('click', () => {
+      const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+      siteNav.classList.toggle('open', open);
+    });
+    siteNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeMenu()));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') closeMenu(true);
+    });
+    document.addEventListener('click', event => {
+      if (!siteNav.contains(event.target) && !menuToggle.contains(event.target)) closeMenu();
+    });
+    const resetMenu = () => closeMenu(mobile.matches && siteNav.contains(document.activeElement));
+    if (mobile.addEventListener) mobile.addEventListener('change', resetMenu);
+    else if (mobile.addListener) mobile.addListener(resetMenu);
+  }
+
+
   const products = [...document.querySelectorAll('.product')];
   const tabs = [...document.querySelectorAll('[data-filter]')];
   const search = document.getElementById('menu-search');
