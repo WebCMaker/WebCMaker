@@ -1797,7 +1797,7 @@ body {position:relative;min-height:100vh;isolation:isolate}
   overflow:hidden;
   pointer-events:none;
   user-select:none;
-  background-image:url('portfolio-field.svg?v=38');
+  background-image:url('portfolio-field.svg?v=39');
   background-size:100% var(--ambient-tile-height);
   background-repeat:repeat-y;
   background-position:0 0;
