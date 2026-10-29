@@ -65,15 +65,15 @@ const rendered = pages.map(page => {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fafaf9">
+  <meta name="theme-color" content="#172522">
   <meta name="description" content="${escape(page.description)}">
   <title>${escape(title)}</title>
   <link rel="canonical" href="${page.canonical}">
-  <link rel="icon" href="favicon.svg?v=29" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg?v=32" type="image/svg+xml">
   <link rel="preload" href="manrope-variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css?v=29">
-  <script defer src="content.js?v=29"></script>
-  <script defer src="app.js?v=29"></script>
+  <link rel="stylesheet" href="styles.css?v=32">
+  <script defer src="content.js?v=32"></script>
+  <script defer src="app.js?v=32"></script>
 </head>
 <body data-page="${page.page}">
   <noscript><style>.copy-brief{display:none}</style><p class="container noscript-note">JavaScript отключён. Форма отправки работает. Также можно написать на <a href="mailto:webcmaker@gmail.com">webcmaker@gmail.com</a>.</p></noscript>

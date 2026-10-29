@@ -17,8 +17,8 @@ window.WEBIT_COPY = {
     "startProject": "Обсудить проект",
     "home": {
       "eyebrow": "WebCMaker · дизайн и разработка",
-      "title": "Сайты с характером. Для вашего дела.",
-      "intro": "Создаю сайты и интернет-магазины: от дизайна до запуска. Подключаю домен, хостинг и нужные сервисы.",
+      "title": "Хороший сайт. Начинается с вас.",
+      "intro": "Дизайн и разработка для тех, кто делает своё дело. От первого эскиза до работающего сайта.",
       "primary": "Смотреть работы",
       "secondary": "Обсудить проект",
       "ribbon": "Идея → дизайн → запуск",
@@ -30,7 +30,7 @@ window.WEBIT_COPY = {
         "Разработка",
         "Запуск"
       ],
-      "trustTitle": "Всё понятно с первого шага",
+      "trustTitle": "Сначала — понять. Потом — создать.",
       "trust": [
         [
           "01",
@@ -48,8 +48,8 @@ window.WEBIT_COPY = {
           "Вы общаетесь со мной — дизайнером и разработчиком сайта."
         ]
       ],
-      "servicesTitle": "Под вашу задачу",
-      "servicesIntro": "Лендинг, сайт компании, редизайн или интернет-магазин.",
+      "servicesTitle": "Что создадим?",
+      "servicesIntro": "Выбираем формат под задачу, а не наоборот.",
       "services": [
         [
           "01",
@@ -77,12 +77,12 @@ window.WEBIT_COPY = {
         ]
       ],
       "timingNote": "Сроки ориентировочные и зависят от объёма и готовности материалов.",
-      "projectsTitle": "Продумано в деталях",
+      "projectsTitle": "У каждой задачи — свой облик",
       "projectsIntro": "FORMA — многостраничный сайт строительной компании.",
       "projectSlot": "Будущий проект",
       "projectSoon": "Скоро здесь",
-      "processTitle": "От разговора до результата",
-      "processIntro": "Четыре этапа. На каждом — понятный следующий шаг.",
+      "processTitle": "Из идеи в интернет",
+      "processIntro": "Знакомимся, создаём, проверяем и запускаем.",
       "process": [
         [
           "01",
@@ -241,13 +241,19 @@ window.WEBIT_COPY = {
     },
     "projects": {
       "eyebrow": "Дизайн + разработка",
-      "title": "FORMA. Форма и содержание.",
-      "intro": "FORMA — многостраничный сайт строительной компании.",
+      "title": "Работа. В деталях.",
+      "intro": "Один концепт — целый сайт. Откройте и попробуйте.",
       "featured": {
         "category": "Концепт · Строительство",
         "title": "FORMA — Architecture & Construction",
         "description": "Архитектура, услуги и проекты. Семь страниц с галереями и конфигуратором задачи.",
-        "linkLabel": "Открыть концепт"
+        "linkLabel": "Открыть концепт",
+        "facts": [
+          "7 страниц",
+          "Галереи",
+          "Конфигуратор"
+        ],
+        "role": "Дизайн · Разработка"
       },
       "noteTitle": "А каким будет ваш сайт?",
       "noteText": "Найдём визуальный характер для вашего проекта.",
@@ -326,8 +332,8 @@ window.WEBIT_COPY = {
     "startProject": "Let’s talk",
     "home": {
       "eyebrow": "WebCMaker · design & development",
-      "title": "Websites with character. Made for your business.",
-      "intro": "I create websites and online stores, from design to launch. Domain, hosting and service connections can be included.",
+      "title": "A good website. Starts with you.",
+      "intro": "Design and development for people building their own thing. From the first sketch to a working website.",
       "primary": "View my work",
       "secondary": "Let’s talk",
       "ribbon": "Idea → design → launch",
@@ -339,7 +345,7 @@ window.WEBIT_COPY = {
         "Development",
         "Launch"
       ],
-      "trustTitle": "Clear from the first step",
+      "trustTitle": "Understand first. Then create.",
       "trust": [
         [
           "01",
@@ -357,8 +363,8 @@ window.WEBIT_COPY = {
           "You work with me, the person designing and building your site."
         ]
       ],
-      "servicesTitle": "Built around your brief",
-      "servicesIntro": "A landing page, business website, redesign or online store.",
+      "servicesTitle": "What shall we build?",
+      "servicesIntro": "The format follows the goal.",
       "services": [
         [
           "01",
@@ -386,12 +392,12 @@ window.WEBIT_COPY = {
         ]
       ],
       "timingNote": "Estimated timing depends on scope and ready-to-use content.",
-      "projectsTitle": "Considered in every detail",
+      "projectsTitle": "Different goals. Distinct websites.",
       "projectsIntro": "FORMA — a multipage construction company website.",
       "projectSlot": "Future project",
       "projectSoon": "Coming soon",
-      "processTitle": "From conversation to creation",
-      "processIntro": "Four stages. A clear next step at each one.",
+      "processTitle": "From an idea to online",
+      "processIntro": "Meet, create, check and launch.",
       "process": [
         [
           "01",
@@ -550,13 +556,19 @@ window.WEBIT_COPY = {
     },
     "projects": {
       "eyebrow": "Design + development",
-      "title": "FORMA. Form and purpose.",
-      "intro": "FORMA — a multipage construction company website.",
+      "title": "Work. In detail.",
+      "intro": "One concept, a complete website. Explore it for yourself.",
       "featured": {
         "category": "Concept · Construction",
         "title": "FORMA — Architecture & Construction",
         "description": "Architecture, services and projects. Seven pages with galleries and a project planner.",
-        "linkLabel": "Open concept"
+        "linkLabel": "Open concept",
+        "facts": [
+          "7 pages",
+          "Galleries",
+          "Project planner"
+        ],
+        "role": "Design · Development"
       },
       "noteTitle": "What could your website look like?",
       "noteText": "Let’s find the visual character of your project.",
@@ -635,8 +647,8 @@ window.WEBIT_COPY = {
     "startProject": "Обговорити проєкт",
     "home": {
       "eyebrow": "WebCMaker · дизайн і розробка",
-      "title": "Сайти з характером. Для вашої справи.",
-      "intro": "Створюю сайти й інтернет-магазини: від дизайну до запуску. Підключаю домен, хостинг і потрібні сервіси.",
+      "title": "Хороший сайт. Починається з вас.",
+      "intro": "Дизайн і розробка для тих, хто робить свою справу. Від першого ескізу до робочого сайту.",
       "primary": "Переглянути роботи",
       "secondary": "Обговорити проєкт",
       "ribbon": "Ідея → дизайн → запуск",
@@ -648,7 +660,7 @@ window.WEBIT_COPY = {
         "Розробка",
         "Запуск"
       ],
-      "trustTitle": "Усе зрозуміло з першого кроку",
+      "trustTitle": "Спочатку — зрозуміти. Потім — створити.",
       "trust": [
         [
           "01",
@@ -666,8 +678,8 @@ window.WEBIT_COPY = {
           "Ви спілкуєтеся зі мною — дизайнером і розробником сайту."
         ]
       ],
-      "servicesTitle": "Під вашу задачу",
-      "servicesIntro": "Лендінг, сайт компанії, редизайн чи інтернет-магазин.",
+      "servicesTitle": "Що створимо?",
+      "servicesIntro": "Обираємо формат під задачу.",
       "services": [
         [
           "01",
@@ -695,12 +707,12 @@ window.WEBIT_COPY = {
         ]
       ],
       "timingNote": "Строки орієнтовні й залежать від обсягу та готовності матеріалів.",
-      "projectsTitle": "Продумано в деталях",
+      "projectsTitle": "У кожної задачі — свій вигляд",
       "projectsIntro": "FORMA — багатосторінковий сайт будівельної компанії.",
       "projectSlot": "Майбутній проєкт",
       "projectSoon": "Незабаром тут",
-      "processTitle": "Від розмови до результату",
-      "processIntro": "Чотири етапи. На кожному — зрозумілий наступний крок.",
+      "processTitle": "З ідеї в інтернет",
+      "processIntro": "Знайомимось, створюємо, перевіряємо та запускаємо.",
       "process": [
         [
           "01",
@@ -859,13 +871,19 @@ window.WEBIT_COPY = {
     },
     "projects": {
       "eyebrow": "Дизайн + розробка",
-      "title": "FORMA. Форма і зміст.",
-      "intro": "FORMA — багатосторінковий сайт будівельної компанії.",
+      "title": "Робота. У деталях.",
+      "intro": "Один концепт — цілий сайт. Відкрийте та спробуйте.",
       "featured": {
         "category": "Концепт · Будівництво",
         "title": "FORMA — Architecture & Construction",
         "description": "Архітектура, послуги та проєкти. Сім сторінок із галереями й конфігуратором завдання.",
-        "linkLabel": "Відкрити концепт"
+        "linkLabel": "Відкрити концепт",
+        "facts": [
+          "7 сторінок",
+          "Галереї",
+          "Конфігуратор"
+        ],
+        "role": "Дизайн · Розробка"
       },
       "noteTitle": "А яким буде ваш сайт?",
       "noteText": "Знайдемо візуальний характер для вашого проєкту.",

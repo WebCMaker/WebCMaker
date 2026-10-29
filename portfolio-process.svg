@@ -1,93 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="400" viewBox="0 0 500 400" fill="none">
   <style>
-    .motion { transform-box: fill-box; transform-origin: center; }
-    .process-card-motion { animation: card-rise 8s ease-in-out infinite; }
-    .process-plane-motion { animation: plane-drift 7s ease-in-out infinite; }
-    .process-cursor-motion { animation: pointer-approach 6.2s ease-in-out infinite; }
-    .process-badge-motion { animation: check-breathe 4.8s ease-in-out infinite; }
-    .process-orbit-trace { stroke-dasharray: 3 9; animation: orbit-trace 24s linear infinite; }
-    @keyframes card-rise {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(5px); }
-    }
-    @keyframes plane-drift {
-      0%, 100% { transform: translate(0, 0) rotate(0deg); }
-      45% { transform: translate(12px, -11px) rotate(3deg); }
-      75% { transform: translate(-4px, -4px) rotate(-1deg); }
-    }
-    @keyframes pointer-approach {
-      0%, 100% { transform: translate(0, 0); }
-      50% { transform: translate(-10px, -8px); }
-    }
-    @keyframes check-breathe {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-    }
-    @keyframes orbit-trace { to { stroke-dashoffset: -144; } }
-    @media (prefers-reduced-motion: reduce) {
-      .motion { animation: none !important; }
-    }
+    .idea,.material,.finish{transform-box:fill-box;transform-origin:center}
+    .idea{animation:idea 10s ease-in-out infinite}.material{animation:material 8s ease-in-out infinite}.finish{animation:finish 7s ease-in-out infinite}
+    .route{stroke-dasharray:3 8;animation:route 28s linear infinite}
+    @keyframes idea{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(3deg)}}
+    @keyframes material{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    @keyframes finish{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+    @keyframes route{to{stroke-dashoffset:-154}}
+    @media(prefers-reduced-motion:reduce){.idea,.material,.finish,.route{animation:none!important}}
   </style>
-  <defs>
-    <filter id="paper-shadow" x="-30%" y="-50%" width="170%" height="210%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#1B326B" flood-opacity=".11"/>
-    </filter>
-    <linearGradient id="paper-face" x1="180" y1="94" x2="335" y2="214" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#4B79FF"/>
-      <stop offset="1" stop-color="#2457F5"/>
-    </linearGradient>
-  </defs>
-
-  <circle cx="248" cy="206" r="141" fill="#EAF0FF" fill-opacity=".7"/>
-  <ellipse class="motion process-orbit-trace" cx="249" cy="210" rx="208" ry="115" transform="rotate(-19 249 210)" stroke="#BBCDF7" stroke-width="1.2"/>
-  <path d="M75 303H431M102 81V325" stroke="#D9E2F5"/>
-  <path d="M69 303H81M75 297V309M96 81H108M102 75V87" stroke="#B5C8EF" stroke-width="1.3"/>
-  <circle cx="64" cy="267" r="6" fill="#2457F5"/>
-
-  <!-- A sheet becomes a finished, carefully arranged web page. -->
-  <g class="motion process-card-motion">
-  <g transform="rotate(6 251 244)" filter="url(#paper-shadow)">
-    <rect x="92" y="160" width="318" height="174" rx="16" fill="white" stroke="#D9E1EF" stroke-width="1.2"/>
-    <path d="M92 190H410" stroke="#E7ECF6"/>
-    <circle cx="110" cy="176" r="3" fill="#A9BDE9"/>
-    <circle cx="120" cy="176" r="3" fill="#CBD6ED"/>
-    <circle cx="130" cy="176" r="3" fill="#E0E6F3"/>
-    <rect x="209" y="173" width="87" height="5" rx="2.5" fill="#E5EAF4"/>
-    <rect x="114" y="211" width="26" height="5" rx="2.5" fill="#2457F5"/>
-    <rect x="114" y="230" width="110" height="11" rx="4" fill="#17191F"/>
-    <rect x="114" y="248" width="81" height="11" rx="4" fill="#17191F"/>
-    <rect x="114" y="275" width="105" height="4" rx="2" fill="#C9D2E4"/>
-    <rect x="114" y="287" width="80" height="4" rx="2" fill="#DEE4EE"/>
-    <rect x="114" y="304" width="67" height="12" rx="6" fill="#2457F5"/>
-    <rect x="256" y="211" width="132" height="105" rx="12" fill="#EAF0FF"/>
-    <path d="M270 295L303 247L326 278L347 252L375 295H270Z" fill="#2457F5"/>
-    <circle cx="351" cy="233" r="9" fill="#DDF3A1"/>
-    <path d="M270 303H375" stroke="#C2D0F2" stroke-linecap="round"/>
+  <path class="route" d="M94 195c14-81 104-139 187-118 80 20 132 97 100 169-32 73-130 101-200 56" stroke="#709B88" stroke-width="1.6"/>
+  <path d="m179 301 12-8m-12 8 4 12" stroke="#709B88" stroke-width="1.6" stroke-linecap="round"/>
+  <g class="idea">
+    <path d="m58 109 111-23 24 115-111 23-24-115Z" fill="#172522"/>
+    <path d="m78 126 78-16m-74 36 59-12" stroke="#709B88" stroke-width="2"/>
+    <path d="m116 159-12 25 22 8 12-25-22-8Z" fill="#B6F4C9"/>
+    <path d="m136 143 7-16m1 26 18-4m-56 0-10-8" stroke="#F5F3EC" stroke-width="2" stroke-linecap="round"/>
   </g>
+  <g class="material">
+    <path d="m208 140 135 8-9 162-135-8 9-162Z" fill="#709B88"/>
+    <path d="m219 129 135 8-9 162-135-8 9-162Z" fill="#F5F3EC"/>
+    <path d="m235 149 101 6" stroke="#172522" stroke-width="2"/>
+    <path d="m232 166 101 6" stroke="#709B88" stroke-width="1.5"/>
+    <rect x="233" y="183" width="83" height="59" rx="29.5" transform="rotate(3.4 233 183)" fill="#172522"/>
+    <path d="m254 215 10-11 8 15 12-22 12 12" stroke="#B6F4C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m226 259 63 4m-64 10 93 6" stroke="#709B88" stroke-width="2"/>
+    <circle cx="328" cy="155" r="2" fill="#172522"/>
   </g>
-
-  <!-- The blue folded sheet is a small physical counterpoint to the screen. -->
-  <g class="motion process-plane-motion">
-  <g filter="url(#paper-shadow)">
-    <path d="M153 112L343 70L310 206L249 160L218 188L207 143L153 112Z" fill="#1339B6"/>
-    <path d="M153 106L343 64L249 154L207 137L153 106Z" fill="url(#paper-face)"/>
-    <path d="M343 64L249 154L310 200L343 64Z" fill="#2457F5"/>
-    <path d="M207 137L343 64L227 154L218 182L207 137Z" fill="#7B9BFF"/>
-    <path d="M218 182L249 154L227 154L218 182Z" fill="#173CB8"/>
-    <path d="M160 106L335 68" stroke="#9CB5FF" stroke-opacity=".65" stroke-width="1.4" stroke-linecap="round"/>
+  <g class="finish">
+    <circle cx="386" cy="245" r="44" fill="#172522"/>
+    <path d="m368 245 12 13 25-28" stroke="#B6F4C9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M386 187v-14m44 28 10-10m-10 98 10 10" stroke="#172522" stroke-width="2" stroke-linecap="round"/>
   </g>
-  </g>
-
-  <g class="motion process-cursor-motion">
-  <g transform="translate(363 266) rotate(5)" filter="url(#paper-shadow)">
-    <path d="M0 0L1 58L16 45L27 70L40 64L29 40L49 37L0 0Z" fill="#17191F" stroke="white" stroke-width="4" stroke-linejoin="round"/>
-  </g>
-  </g>
-  <g class="motion process-badge-motion">
-  <circle cx="422" cy="139" r="13" fill="#DDF3A1"/>
-  <path d="M416 139L420 143L428 135" stroke="#17191F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-  <path d="M127 102V116M120 109H134" stroke="#2457F5" stroke-width="1.7" stroke-linecap="round"/>
-  <path d="M375 73V83M370 78H380" stroke="#A1B9F3" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="192" cy="358" r="3" fill="#2457F5"/>
+  <path d="M61 281h27m-14-14v28M365 89h19m-9-9v19" stroke="#709B88" stroke-width="1.5"/>
+  <circle cx="136" cy="292" r="6" stroke="#172522" stroke-width="1.5"/>
 </svg>
