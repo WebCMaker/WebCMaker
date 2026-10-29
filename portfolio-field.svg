@@ -2,9 +2,6 @@
   <!-- Each route matches position, tangent and curvature at both tile edges. -->
   <style>
     path {vector-effect:non-scaling-stroke}
-    .field-current {animation:field-stream-down 18s linear infinite}
-    @keyframes field-stream-down {from{stroke-dashoffset:0}to{stroke-dashoffset:-240}}
-    @media (prefers-reduced-motion:reduce) {.field-current{animation:none!important}}
   </style>
   <!-- Low-opacity vector halos keep the light soft and the tile edges continuous. -->
   <g class="field-glow-wide" stroke="#B6F4C9" stroke-width="9" stroke-opacity=".04">

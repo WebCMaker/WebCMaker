@@ -71,7 +71,7 @@ const rendered = pages.map(page => {
   <link rel="canonical" href="${page.canonical}">
   <link rel="icon" href="favicon.svg?v=36" type="image/svg+xml">
   <link rel="preload" href="manrope-variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css?v=39">
+  <link rel="stylesheet" href="styles.css?v=40">
   <script defer src="content.js?v=36"></script>
   <script defer src="app.js?v=36"></script>
 </head>

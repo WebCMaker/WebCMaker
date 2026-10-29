@@ -1785,27 +1785,35 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
   color:#33574b
 }
 
-/* Periodic routes and dots join at every tile edge as the full-page field flows down. */
+/* Rasterize one static field, then move a viewport-sized layer on the compositor. */
 body {position:relative;min-height:100vh;isolation:isolate}
 .container {position:relative;z-index:2}
 .ambient-field {
   --ambient-tile-height:1200px;
   --ambient-flow-duration:60s;
-  position:absolute;
+  position:fixed;
   inset:0;
   z-index:1;
   overflow:hidden;
+  contain:paint;
   pointer-events:none;
   user-select:none;
-  background-image:url('portfolio-field.svg?v=39');
+}
+.ambient-field::before {
+  content:"";
+  position:absolute;
+  inset:calc(-1 * var(--ambient-tile-height)) 0 0;
+  background-image:url('portfolio-field.svg?v=40');
   background-size:100% var(--ambient-tile-height);
   background-repeat:repeat-y;
   background-position:0 0;
+  transform:translate3d(0,0,0);
+  will-change:transform;
   animation:ambient-flow-down var(--ambient-flow-duration) linear infinite;
 }
 @keyframes ambient-flow-down {
-  from {background-position:0 0}
-  to {background-position:0 var(--ambient-tile-height)}
+  from {transform:translate3d(0,0,0)}
+  to {transform:translate3d(0,var(--ambient-tile-height),0)}
 }
 @media(max-width:640px) {
   .ambient-field {
@@ -1813,7 +1821,7 @@ body {position:relative;min-height:100vh;isolation:isolate}
     --ambient-flow-duration:45s;
   }
 }
-.ambient-paused .ambient-field {animation-play-state:paused!important;background-image:none}
+.ambient-paused .ambient-field::before {animation-play-state:paused!important}
 .hero,.page-hero,.site-footer {
   background-color:var(--ink);
   background-image:radial-gradient(ellipse at 86% 36%,#5e9b7720,transparent 58%),linear-gradient(135deg,#172522,#12201d);
