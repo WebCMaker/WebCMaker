@@ -1785,43 +1785,29 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
   color:#33574b
 }
 
-/* One continuous viewport field stays behind every section and page. */
-body {isolation:isolate}
+/* A light, repeating field follows the full document as it scrolls. */
+body {position:relative;min-height:100vh;isolation:isolate}
 .container {position:relative;z-index:2}
 .ambient-field {
-  position:fixed;
+  position:absolute;
   inset:0;
   z-index:1;
   overflow:hidden;
   pointer-events:none;
   user-select:none;
+  background-image:url('portfolio-field.svg?v=36');
+  background-size:100% 1200px;
+  background-repeat:repeat-y;
+  animation:ambient-drift 15s ease-in-out infinite alternate;
 }
-.ambient-field>svg {
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  max-width:none;
+@keyframes ambient-drift {
+  from {background-position:0 38px}
+  to {background-position:0 -38px}
 }
-.ambient-field::after {
-  content:'';
-  position:absolute;
-  inset:0;
-  background:radial-gradient(ellipse at 80% 40%,#8ab69a12,transparent 56%);
+@media(max-width:640px) {
+  .ambient-field {background-size:100% 900px}
 }
-.field-routes {animation:field-rise 18s ease-in-out infinite alternate}
-.field-current {animation:field-current 14s linear infinite}
-.field-markers {animation:field-marker-rise 10s ease-in-out infinite alternate}
-@keyframes field-rise {
-  from {transform:translateY(52px)}
-  to {transform:translateY(-52px)}
-}
-@keyframes field-current {to {stroke-dashoffset:-160}}
-@keyframes field-marker-rise {
-  from {opacity:.25;transform:translateY(74px)}
-  to {opacity:.72;transform:translateY(-74px)}
-}
-.ambient-paused .ambient-field * {animation-play-state:paused!important}
+.ambient-paused .ambient-field {animation-play-state:paused!important;background-image:none}
 .hero,.page-hero,.site-footer {
   background-color:var(--ink);
   background-image:radial-gradient(ellipse at 86% 36%,#5e9b7720,transparent 58%),linear-gradient(135deg,#172522,#12201d);
