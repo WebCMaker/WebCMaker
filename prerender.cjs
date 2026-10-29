@@ -12,7 +12,7 @@ const appSource = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
 const base = 'https://webcmaker.github.io/WebCMaker/';
 const pages = [
   { page: 'home', file: 'index.html', canonical: base, description: 'WebCMaker — лендинги, сайты компаний и интернет-магазины. Дизайн, разработка, онлайн-оплата и запуск сайта.' },
-  { page: 'projects', file: 'projects.html', canonical: base + 'projects.html', description: 'Учебные концепты WebCMaker: кофейня TERRA и строительная компания FORMA. Дизайн и работающие сайты.' },
+  { page: 'projects', file: 'projects.html', canonical: base + 'projects.html', description: 'FORMA — многостраничный концепт сайта строительной компании от WebCMaker. Услуги, объекты, галереи и конфигуратор проекта.' },
   { page: 'services', file: 'services.html', canonical: base + 'services.html', description: 'Лендинги, сайты компаний, интернет-магазины и редизайн от WebCMaker. Подключение оплаты, домена и хостинга, публикация сайта.' },
   { page: 'brief', file: 'brief.html', canonical: base + 'brief.html', description: 'Расскажите WebCMaker о вашем проекте: формат сайта, задача и пожелания. Связь: webcmaker@gmail.com.' }
 ];
@@ -69,11 +69,11 @@ const rendered = pages.map(page => {
   <meta name="description" content="${escape(page.description)}">
   <title>${escape(title)}</title>
   <link rel="canonical" href="${page.canonical}">
-  <link rel="icon" href="favicon.svg?v=28" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg?v=29" type="image/svg+xml">
   <link rel="preload" href="manrope-variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css?v=28">
-  <script defer src="content.js?v=28"></script>
-  <script defer src="app.js?v=28"></script>
+  <link rel="stylesheet" href="styles.css?v=29">
+  <script defer src="content.js?v=29"></script>
+  <script defer src="app.js?v=29"></script>
 </head>
 <body data-page="${page.page}">
   <noscript><style>.copy-brief{display:none}</style><p class="container noscript-note">JavaScript отключён. Форма отправки работает. Также можно написать на <a href="mailto:webcmaker@gmail.com">webcmaker@gmail.com</a>.</p></noscript>

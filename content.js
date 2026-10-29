@@ -1,4 +1,3 @@
-/* Website copy: keep the same keys in all three languages. */
 window.WEBIT_COPY = {
   "ru": {
     "langName": "Русский",
@@ -78,8 +77,8 @@ window.WEBIT_COPY = {
         ]
       ],
       "timingNote": "Сроки ориентировочные и зависят от объёма и готовности материалов.",
-      "projectsTitle": "Два разных характера",
-      "projectsIntro": "Учебные концепты для кофейни и строительной компании.",
+      "projectsTitle": "Продумано в деталях",
+      "projectsIntro": "FORMA — многостраничный сайт строительной компании.",
       "projectSlot": "Будущий проект",
       "projectSoon": "Скоро здесь",
       "processTitle": "От разговора до результата",
@@ -242,12 +241,12 @@ window.WEBIT_COPY = {
     },
     "projects": {
       "eyebrow": "Дизайн + разработка",
-      "title": "Идеи, ставшие сайтами.",
-      "intro": "Два учебных концепта — два разных подхода к дизайну.",
+      "title": "FORMA. Форма и содержание.",
+      "intro": "FORMA — многостраничный сайт строительной компании.",
       "featured": {
-        "category": "Концепт · Кофейня",
-        "title": "TERRA — кофе без спешки",
-        "description": "Кофейня: меню, состав напитков и план визита.",
+        "category": "Концепт · Строительство",
+        "title": "FORMA — Architecture & Construction",
+        "description": "Архитектура, услуги и проекты. Семь страниц с галереями и конфигуратором задачи.",
         "linkLabel": "Открыть концепт"
       },
       "noteTitle": "А каким будет ваш сайт?",
@@ -387,8 +386,8 @@ window.WEBIT_COPY = {
         ]
       ],
       "timingNote": "Estimated timing depends on scope and ready-to-use content.",
-      "projectsTitle": "Two distinct personalities",
-      "projectsIntro": "Demo concepts for a coffee shop and a construction company.",
+      "projectsTitle": "Considered in every detail",
+      "projectsIntro": "FORMA — a multipage construction company website.",
       "projectSlot": "Future project",
       "projectSoon": "Coming soon",
       "processTitle": "From conversation to creation",
@@ -551,12 +550,12 @@ window.WEBIT_COPY = {
     },
     "projects": {
       "eyebrow": "Design + development",
-      "title": "Ideas made into websites.",
-      "intro": "Two demo concepts. Two different design directions.",
+      "title": "FORMA. Form and purpose.",
+      "intro": "FORMA — a multipage construction company website.",
       "featured": {
-        "category": "Concept · Coffee shop",
-        "title": "TERRA — coffee without the rush",
-        "description": "A coffee shop with a filterable menu and visit planner.",
+        "category": "Concept · Construction",
+        "title": "FORMA — Architecture & Construction",
+        "description": "Architecture, services and projects. Seven pages with galleries and a project planner.",
         "linkLabel": "Open concept"
       },
       "noteTitle": "What could your website look like?",
@@ -696,8 +695,8 @@ window.WEBIT_COPY = {
         ]
       ],
       "timingNote": "Строки орієнтовні й залежать від обсягу та готовності матеріалів.",
-      "projectsTitle": "Два різні характери",
-      "projectsIntro": "Навчальні концепти для кав’ярні та будівельної компанії.",
+      "projectsTitle": "Продумано в деталях",
+      "projectsIntro": "FORMA — багатосторінковий сайт будівельної компанії.",
       "projectSlot": "Майбутній проєкт",
       "projectSoon": "Незабаром тут",
       "processTitle": "Від розмови до результату",
@@ -860,12 +859,12 @@ window.WEBIT_COPY = {
     },
     "projects": {
       "eyebrow": "Дизайн + розробка",
-      "title": "Ідеї, що стали сайтами.",
-      "intro": "Два навчальні концепти — два різні підходи до дизайну.",
+      "title": "FORMA. Форма і зміст.",
+      "intro": "FORMA — багатосторінковий сайт будівельної компанії.",
       "featured": {
-        "category": "Концепт · Кав’ярня",
-        "title": "TERRA — кава без поспіху",
-        "description": "Кав’ярня: меню, склад напоїв і план візиту.",
+        "category": "Концепт · Будівництво",
+        "title": "FORMA — Architecture & Construction",
+        "description": "Архітектура, послуги та проєкти. Сім сторінок із галереями й конфігуратором завдання.",
         "linkLabel": "Відкрити концепт"
       },
       "noteTitle": "А яким буде ваш сайт?",

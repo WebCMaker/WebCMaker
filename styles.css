@@ -508,6 +508,16 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
   gap:28px;
   align-items:stretch
 }
+.project-grid.single-project { grid-template-columns:1fr; }
+.single-project .project-featured { display:grid;grid-template-columns:1.1fr .9fr;gap:65px;align-items:center; }
+.single-project .project-caption { padding:0;min-height:0; }
+.single-project .project-caption h3 { font-size:66px;line-height:1;letter-spacing:-.06em;margin-top:22px; }
+.single-project .project-caption h3>span { display:block;font-size:12px;letter-spacing:0;font-weight:450;margin-top:20px; }
+.single-project .project-caption p { max-width:340px;font-size:14px;line-height:1.9;margin-top:25px; }
+.project-discover { display:inline-flex;align-items:center;gap:35px;margin-top:30px;font-size:13px; }
+.project-discover svg { width:18px;height:18px; }
+@media(max-width:900px){.single-project .project-featured{gap:35px}.single-project .project-caption h3{font-size:52px}.single-project .project-caption p{font-size:12px}}
+@media(max-width:640px){.single-project .project-featured{grid-template-columns:1fr;gap:28px}.single-project .project-caption h3{font-size:46px;margin-top:17px}.single-project .project-caption h3>span{font-size:11px;margin-top:14px}.single-project .project-caption p{font-size:13px;margin-top:20px}.project-discover{font-size:12px;margin-top:22px}}
 
 .project-card {
   display:flex;
@@ -554,13 +564,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .project-image { position:relative;flex:1;min-height:0;overflow:hidden;margin:9px 12px 12px; }
 .project-image>img { position:absolute;width:100%;height:100%;object-fit:cover;transition:transform .5s; }
 .project-card:hover .project-image>img { transform:scale(1.035); }
-.project-coffee .project-image>img { object-position:50% 52%; }
 .project-construction .project-image>img { object-position:50% 58%; }
-.project-coffee .project-browser { position:relative;background:#f1ede4; }
-.project-coffee .project-preview-copy { position:absolute;z-index:1;top:42px;left:0;right:0;color:#f8f3e9; }
-.project-coffee .project-preview-copy strong { text-shadow:0 2px 14px #29231f20; }
-.project-coffee .project-image { margin:0; }
-.project-coffee .project-image::after { content:'';position:absolute;inset:0;background:linear-gradient(#29231f30,transparent 65%); }
 
 .concept-badge {
   position:absolute;
