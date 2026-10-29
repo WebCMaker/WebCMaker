@@ -1785,27 +1785,33 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
   color:#33574b
 }
 
-/* A light, repeating field follows the full document as it scrolls. */
+/* Periodic routes and dots join at every tile edge as the full-page field flows down. */
 body {position:relative;min-height:100vh;isolation:isolate}
 .container {position:relative;z-index:2}
 .ambient-field {
+  --ambient-tile-height:1200px;
+  --ambient-flow-duration:60s;
   position:absolute;
   inset:0;
   z-index:1;
   overflow:hidden;
   pointer-events:none;
   user-select:none;
-  background-image:url('portfolio-field.svg?v=36');
-  background-size:100% 1200px;
+  background-image:url('portfolio-field.svg?v=38');
+  background-size:100% var(--ambient-tile-height);
   background-repeat:repeat-y;
-  animation:ambient-drift 15s ease-in-out infinite alternate;
+  background-position:0 0;
+  animation:ambient-flow-down var(--ambient-flow-duration) linear infinite;
 }
-@keyframes ambient-drift {
-  from {background-position:0 38px}
-  to {background-position:0 -38px}
+@keyframes ambient-flow-down {
+  from {background-position:0 0}
+  to {background-position:0 var(--ambient-tile-height)}
 }
 @media(max-width:640px) {
-  .ambient-field {background-size:100% 900px}
+  .ambient-field {
+    --ambient-tile-height:900px;
+    --ambient-flow-duration:45s;
+  }
 }
 .ambient-paused .ambient-field {animation-play-state:paused!important;background-image:none}
 .hero,.page-hero,.site-footer {
