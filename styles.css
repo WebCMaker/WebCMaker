@@ -1785,6 +1785,41 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
   color:#33574b
 }
 
+/* A custom magnetic field connects the portfolio artwork to its canvas.
+ * All layers are static backgrounds: they do not intercept input or alter layout. */
+.hero,.page-hero,.site-footer {
+  background-color:var(--ink);
+  background-image:url('portfolio-field.svg?v=33'),radial-gradient(ellipse at 86% 36%,#5e9b7730,transparent 58%),linear-gradient(135deg,#172522,#12201d);
+  background-repeat:no-repeat;
+  background-position:center right,center,center;
+  background-size:cover,cover,cover;
+}
+.page-hero {
+  background-position:right 48%,center,center;
+  background-size:max(1100px,100%) auto,cover,cover;
+}
+.site-footer {
+  background-position:right 73%,center,center;
+  background-size:max(1250px,100%) auto,cover,cover;
+}
+.section-work,.section-process,.brief-section {
+  background-image:radial-gradient(ellipse at 100% 0%,#dce9dd80,transparent 52%);
+}
+@media(max-width:640px) {
+  .hero {
+    background-size:auto 1100px,cover,cover;
+    background-position:57% 130px,center,center;
+  }
+  .page-hero {
+    background-size:850px auto,cover,cover;
+    background-position:57% 50%,center,center;
+  }
+  .site-footer {
+    background-size:auto 880px,cover,cover;
+    background-position:60% 50%,center,center;
+  }
+}
+
 @media(min-width:1600px) {
   .hero {
     padding-top:90px
