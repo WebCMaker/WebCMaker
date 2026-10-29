@@ -247,7 +247,7 @@ window.WEBIT_COPY = {
       "featured": {
         "category": "Концепт · Кофейня",
         "title": "TERRA — кофе без спешки",
-        "description": "Атмосфера кофейни, меню и детали визита.",
+        "description": "Кофейня: меню, состав напитков и план визита.",
         "linkLabel": "Открыть концепт"
       },
       "noteTitle": "А каким будет ваш сайт?",
@@ -556,7 +556,7 @@ window.WEBIT_COPY = {
       "featured": {
         "category": "Concept · Coffee shop",
         "title": "TERRA — coffee without the rush",
-        "description": "Coffee shop atmosphere, menu and visit details.",
+        "description": "A coffee shop with a filterable menu and visit planner.",
         "linkLabel": "Open concept"
       },
       "noteTitle": "What could your website look like?",
@@ -865,7 +865,7 @@ window.WEBIT_COPY = {
       "featured": {
         "category": "Концепт · Кав’ярня",
         "title": "TERRA — кава без поспіху",
-        "description": "Атмосфера кав’ярні, меню та деталі візиту.",
+        "description": "Кав’ярня: меню, склад напоїв і план візиту.",
         "linkLabel": "Відкрити концепт"
       },
       "noteTitle": "А яким буде ваш сайт?",
