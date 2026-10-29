@@ -1785,39 +1785,52 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
   color:#33574b
 }
 
-/* A custom magnetic field connects the portfolio artwork to its canvas.
- * All layers are static backgrounds: they do not intercept input or alter layout. */
+/* One continuous viewport field stays behind every section and page. */
+body {isolation:isolate}
+.container {position:relative;z-index:2}
+.ambient-field {
+  position:fixed;
+  inset:0;
+  z-index:1;
+  overflow:hidden;
+  pointer-events:none;
+  user-select:none;
+}
+.ambient-field>svg {
+  position:absolute;
+  inset:-6%;
+  width:112%;
+  height:112%;
+  max-width:none;
+}
+.ambient-field::after {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse at 80% 40%,#8ab69a12,transparent 56%);
+}
+.field-routes {transform-origin:65% 50%;animation:field-sway 22s ease-in-out infinite alternate}
+.field-current {animation:field-current 14s linear infinite}
+.field-markers {animation:field-breathe 6s ease-in-out infinite alternate}
+@keyframes field-sway {
+  from {transform:translate(-20px,-16px) rotate(-1deg)}
+  to {transform:translate(24px,20px) rotate(1deg)}
+}
+@keyframes field-current {to {stroke-dashoffset:-160}}
+@keyframes field-breathe {
+  from {opacity:.2;transform:translateY(0)}
+  to {opacity:.7;transform:translateY(-15px)}
+}
+.ambient-paused .ambient-field * {animation-play-state:paused!important}
 .hero,.page-hero,.site-footer {
   background-color:var(--ink);
-  background-image:url('portfolio-field.svg?v=33'),radial-gradient(ellipse at 86% 36%,#5e9b7730,transparent 58%),linear-gradient(135deg,#172522,#12201d);
-  background-repeat:no-repeat;
-  background-position:center right,center,center;
-  background-size:cover,cover,cover;
-}
-.page-hero {
-  background-position:right 48%,center,center;
-  background-size:max(1100px,100%) auto,cover,cover;
-}
-.site-footer {
-  background-position:right 73%,center,center;
-  background-size:max(1250px,100%) auto,cover,cover;
+  background-image:radial-gradient(ellipse at 86% 36%,#5e9b7720,transparent 58%),linear-gradient(135deg,#172522,#12201d);
 }
 .section-work,.section-process,.brief-section {
   background-image:radial-gradient(ellipse at 100% 0%,#dce9dd80,transparent 52%);
 }
 @media(max-width:640px) {
-  .hero {
-    background-size:auto 1100px,cover,cover;
-    background-position:57% 130px,center,center;
-  }
-  .page-hero {
-    background-size:850px auto,cover,cover;
-    background-position:57% 50%,center,center;
-  }
-  .site-footer {
-    background-size:auto 880px,cover,cover;
-    background-position:60% 50%,center,center;
-  }
+  .ambient-field>svg {left:-57%;right:auto;width:170%;height:112%}
 }
 
 @media(min-width:1600px) {

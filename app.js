@@ -15,6 +15,9 @@
   const star = '<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M9 30V18a9 9 0 0 1 18 0v12a6 6 0 0 0 12 0V18M9 24h30" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   const mark = '<img src="brand-mark.svg?v=32" width="40" height="40" alt="" decoding="async">';
   const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const syncAmbientVisibility = () => document.body.classList.toggle('ambient-paused', document.hidden);
+  document.addEventListener('visibilitychange', syncAmbientVisibility);
+  syncAmbientVisibility();
   let stopMotion = () => {};
   let stopBrief = () => {};
   const words = {
